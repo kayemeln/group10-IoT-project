@@ -1,2 +1,3 @@
-# group10-IoT-project
-Six of Trinity's finest engineers embark on a state-of-the-art Automatic Party Entry project
+# Automatic Party Entry - CS7NS2
+
+- **Branches:** Perhaps we can all create our own branch for the things we are working on?
