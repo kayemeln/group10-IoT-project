@@ -18,4 +18,5 @@ This doesn't do much - just capturing a JPEG and uploading to a HTTP server on t
 - Flash and monitor with `idf.py -p PORT flash monitor`.
     - This should display the IP address of the server and the port number.
     - In your browser enter `http://<ip-address>:<port>/stream`.
-
+    - You will be blessed with an image like this:
+![Selfie](selfie.jpg)
