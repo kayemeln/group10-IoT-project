@@ -1,0 +1,101 @@
+Command: C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\TCD\IoT\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web\build\human_face_detection_web.elf C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web\build\bootloader\bootloader.elf --force-color -m 'C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\TCD\IoT\tools\idf.py' '-p' 'COM3'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:1588
+load:0x40078000,len:16504
+load:0x40080400,len:3492
+entry 0x400805f4
+[0;33mW (291) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;33mW (374) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;33mW (7644) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (11644) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (15644) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (19644) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (23644) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (24104) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (24104) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (27644) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (31644) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (36784) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (44384) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (51224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (55224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (59224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (63224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (67224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (71224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (75224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (79224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (83224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (87224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (91224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (95224) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (101894) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (133214) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (133214) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (137624) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (145484) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (149484) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (153484) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (157484) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (161484) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (171574) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (175574) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (196664) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (200664) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (210094) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (218704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (222704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (226704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (230704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (234704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (238704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (242704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (246704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (250704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (254704) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (264824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (268824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (272824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (276824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (280824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (284824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (288824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (292824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (296824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (300824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (304824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (308824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (312824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (316824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (320824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (324824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (328824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (332824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (336824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (340824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (344824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (348824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (352824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (356824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (360824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (364824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (368824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (372824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (376824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (380824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (384824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (388824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (392824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (396824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (400824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (404824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (408824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (412824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (416824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (420824) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (424824) cam_hal: Failed to get frame: timeout[0m

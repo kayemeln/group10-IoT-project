@@ -1,0 +1,259 @@
+Command: C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\TCD\IoT\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\terminal\build\human_face_detection_terminal.elf C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\terminal\build\bootloader\bootloader.elf --force-color -m 'C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\TCD\IoT\tools\idf.py' '-p' 'COM3'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6708
+load:0x40078000,len:16816
+ho 0 tail 12 room 4
+load:0x40080400,len:4348
+entry 0x40080664
+[0;32mI (29) boot: ESP-IDF v5.5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jan 30 2026 16:00:53[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 factory          factory app      00 00 00010000 003c0000[0m
+[0;32mI (69) boot:  1 nvs              WiFi data        01 02 003d0000 00004000[0m
+[0;32mI (75) boot:  2 fr               unknown          20 20 003e0000 00020000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=59d10h (367888) map[0m
+[0;32mI (186) esp_image: segment 1: paddr=00069d38 vaddr=3ffb0000 size=05210h ( 21008) load[0m
+[0;32mI (192) esp_image: segment 2: paddr=0006ef50 vaddr=40080000 size=010c8h (  4296) load[0m
+[0;32mI (194) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=640cch (409804) map[0m
+[0;32mI (302) esp_image: segment 4: paddr=000d40f4 vaddr=400810c8 size=144b0h ( 83120) load[0m
+[0;32mI (328) esp_image: segment 5: paddr=000e85ac vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (339) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (339) boot: Disabling RNG early entropy source...[0m
+[0;32mI (349) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (350) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (350) esp_psram: Speed: 80MHz[0m
+[0;32mI (350) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (357) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (365) cpu_start: Multicore app[0m
+[0;32mI (879) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (887) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (887) cpu_start: Pro cpu start user code[0m
+[0;32mI (887) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (889) app_init: Application information:[0m
+[0;32mI (893) app_init: Project name:     human_face_detection_terminal[0m
+[0;32mI (898) app_init: App version:      v1.1.0[0m
+[0;32mI (902) app_init: Compile time:     Jan 30 2026 15:59:59[0m
+[0;32mI (907) app_init: ELF file SHA256:  abf94ed39...[0m
+[0;32mI (912) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (916) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (920) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (924) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (928) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (934) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (939) heap_init: At 3FFB8B58 len 000274A8 (157 KiB): DRAM[0m
+[0;32mI (944) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (950) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (955) heap_init: At 40095578 len 0000AA88 (42 KiB): IRAM[0m
+[0;32mI (961) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (968) spi_flash: detected chip: generic[0m
+[0;32mI (971) spi_flash: flash io: qio[0m
+[0;32mI (980) main_task: Started on CPU0[0m
+[0;32mI (990) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (990) main_task: Calling app_main()[0m
+[0;32mI (990) who_camera: Camera module is ESP-EYE[0m
+[0;32mI (990) cam_hal: cam init ok[0m
+[0;32mI (990) sccb-ng: pin_sda 18 pin_scl 23[0m
+[0;32mI (1000) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1010) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1010) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1010) camera: Detected OV5640 camera[0m
+[0;32mI (1010) camera: Detected camera at address=0x3c[0m
+[0;32mI (1700) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1700) esp32 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 3, dma_half_buffer_min:  3840, dma_half_buffer: 15360,lines_per_half_buffer: 12, dma_buffer_size: 30720, image_size: 153600[0m
+[0;32mI (1710) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (1720) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1720) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1730) cam_hal: cam config ok[0m
+[0;32mI (1740) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (1740) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (1780) main_task: Returned from app_main()[0m
+[0;32mI (44850) detection_result: [ 0]: (133,  71, 224, 187)[0m
+[0;32mI (44850) detection_result:       left eye: (166, 111), right eye: (204, 115), nose: (187, 132), mouth left: (164, 151), mouth right: (192, 155)[0m
+[0;32mI (45110) detection_result: [ 0]: (123,  59, 222, 184)[0m
+[0;32mI (45110) detection_result:       left eye: (157,  97), right eye: (197, 100), nose: (178, 118), mouth left: (154, 138), mouth right: (186, 141)[0m
+[0;32mI (45360) detection_result: [ 0]: (116,  59, 210, 181)[0m
+[0;32mI (45360) detection_result:       left eye: (143, 100), right eye: (187, 101), nose: (166, 119), mouth left: (146, 148), mouth right: (180, 149)[0m
+[0;32mI (45610) detection_result: [ 0]: (119,  62, 209, 179)[0m
+[0;32mI (45610) detection_result:       left eye: (144, 100), right eye: (187, 102), nose: (166, 118), mouth left: (146, 147), mouth right: (179, 149)[0m
+[0;32mI (45870) detection_result: [ 0]: (117,  61, 210, 182)[0m
+[0;32mI (45870) detection_result:       left eye: (144, 101), right eye: (188, 103), nose: (168, 119), mouth left: (146, 148), mouth right: (181, 149)[0m
+[0;32mI (46120) detection_result: [ 0]: (119,  62, 210, 180)[0m
+[0;32mI (46120) detection_result:       left eye: (146,  99), right eye: (189, 102), nose: (167, 119), mouth left: (147, 146), mouth right: (180, 148)[0m
+[0;32mI (46370) detection_result: [ 0]: (120,  62, 213, 184)[0m
+[0;32mI (46370) detection_result:       left eye: (147, 100), right eye: (191, 102), nose: (170, 120), mouth left: (149, 147), mouth right: (183, 149)[0m
+[0;32mI (46630) detection_result: [ 0]: (122,  63, 214, 185)[0m
+[0;32mI (46630) detection_result:       left eye: (150, 102), right eye: (193, 105), nose: (172, 121), mouth left: (151, 148), mouth right: (185, 150)[0m
+[0;32mI (46880) detection_result: [ 0]: (121,  64, 214, 185)[0m
+[0;32mI (46880) detection_result:       left eye: (151, 103), right eye: (194, 105), nose: (174, 122), mouth left: (152, 149), mouth right: (186, 150)[0m
+[0;32mI (47130) detection_result: [ 0]: (122,  64, 213, 183)[0m
+[0;32mI (47130) detection_result:       left eye: (150, 103), right eye: (193, 106), nose: (173, 121), mouth left: (152, 148), mouth right: (184, 151)[0m
+[0;32mI (47390) detection_result: [ 0]: (121,  64, 212, 183)[0m
+[0;32mI (47390) detection_result:       left eye: (149, 101), right eye: (192, 105), nose: (171, 119), mouth left: (151, 147), mouth right: (184, 150)[0m
+[0;32mI (47640) detection_result: [ 0]: (127,  65, 220, 181)[0m
+[0;32mI (47640) detection_result:       left eye: (160, 100), right eye: (199, 104), nose: (182, 125), mouth left: (163, 146), mouth right: (192, 147)[0m
+[0;32mI (47890) detection_result: [ 0]: (147,  55, 247, 181)[0m
+[0;32mI (47890) detection_result:       left eye: (183,  98), right eye: (225, 101), nose: (207, 120), mouth left: (181, 141), mouth right: (214, 143)[0m
+[0;32mI (48150) detection_result: [ 0]: (148,  51, 249, 175)[0m
+[0;32mI (48150) detection_result:       left eye: (185,  93), right eye: (225,  99), nose: (206, 117), mouth left: (179, 135), mouth right: (210, 139)[0m
+[0;32mI (48400) detection_result: [ 0]: (142,  51, 237, 173)[0m
+[0;32mI (48400) detection_result:       left eye: (176,  90), right eye: (217,  95), nose: (197, 111), mouth left: (172, 134), mouth right: (205, 138)[0m
+[0;32mI (48650) detection_result: [ 0]: (137,  48, 235, 173)[0m
+[0;32mI (48650) detection_result:       left eye: (171,  88), right eye: (214,  91), nose: (195, 107), mouth left: (169, 133), mouth right: (203, 135)[0m
+[0;32mI (48910) detection_result: [ 0]: (137,  47, 238, 176)[0m
+[0;32mI (48910) detection_result:       left eye: (170,  89), right eye: (213,  91), nose: (193, 108), mouth left: (168, 132), mouth right: (203, 134)[0m
+[0;32mI (49160) detection_result: [ 0]: (137,  49, 233, 170)[0m
+[0;32mI (49160) detection_result:       left eye: (170,  89), right eye: (212,  91), nose: (194, 108), mouth left: (170, 132), mouth right: (203, 134)[0m
+[0;32mI (49410) detection_result: [ 0]: (137,  50, 233, 171)[0m
+[0;32mI (49410) detection_result:       left eye: (170,  91), right eye: (213,  93), nose: (194, 109), mouth left: (170, 135), mouth right: (204, 136)[0m
+[0;32mI (49670) detection_result: [ 0]: (137,  49, 234, 171)[0m
+[0;32mI (49670) detection_result:       left eye: (169,  89), right eye: (212,  91), nose: (193, 110), mouth left: (168, 133), mouth right: (203, 135)[0m
+[0;32mI (49920) detection_result: [ 0]: (135,  47, 236, 176)[0m
+[0;32mI (49920) detection_result:       left eye: (169,  89), right eye: (213,  91), nose: (192, 110), mouth left: (168, 133), mouth right: (204, 134)[0m
+[0;32mI (50170) detection_result: [ 0]: (136,  46, 236, 176)[0m
+[0;32mI (50180) detection_result:       left eye: (169,  89), right eye: (212,  91), nose: (192, 110), mouth left: (168, 134), mouth right: (204, 135)[0m
+[0;32mI (50430) detection_result: [ 0]: (146,  51, 245, 175)[0m
+[0;32mI (50430) detection_result:       left eye: (181,  89), right eye: (221,  92), nose: (204, 114), mouth left: (180, 132), mouth right: (211, 134)[0m
+[0;32mI (50680) detection_result: [ 0]: (163,  64, 261, 186)[0m
+[0;32mI (50680) detection_result:       left eye: (199, 105), right eye: (238, 108), nose: (220, 128), mouth left: (198, 149), mouth right: (227, 151)[0m
+[0;32mI (50930) detection_result: [ 0]: (164,  73, 259, 192)[0m
+[0;32mI (50930) detection_result:       left eye: (200, 113), right eye: (239, 119), nose: (222, 135), mouth left: (195, 155), mouth right: (225, 160)[0m
+[0;32mI (51190) detection_result: [ 0]: (163,  72, 260, 194)[0m
+[0;32mI (51190) detection_result:       left eye: (199, 112), right eye: (239, 117), nose: (221, 137), mouth left: (194, 155), mouth right: (225, 159)[0m
+[0;32mI (51440) detection_result: [ 0]: (159,  68, 260, 194)[0m
+[0;32mI (51440) detection_result:       left eye: (197, 110), right eye: (238, 116), nose: (219, 133), mouth left: (191, 153), mouth right: (223, 159)[0m
+[0;32mI (51690) detection_result: [ 0]: (158,  68, 257, 193)[0m
+[0;32mI (51700) detection_result:       left eye: (196, 110), right eye: (235, 115), nose: (218, 131), mouth left: (190, 152), mouth right: (222, 157)[0m
+[0;32mI (51950) detection_result: [ 0]: (158,  68, 258, 196)[0m
+[0;32mI (51950) detection_result:       left eye: (196, 111), right eye: (236, 116), nose: (218, 132), mouth left: (191, 153), mouth right: (223, 158)[0m
+[0;32mI (52200) detection_result: [ 0]: (158,  68, 261, 195)[0m
+[0;32mI (52200) detection_result:       left eye: (196, 111), right eye: (235, 117), nose: (217, 133), mouth left: (189, 152), mouth right: (221, 156)[0m
+[0;32mI (52450) detection_result: [ 0]: (158,  69, 260, 196)[0m
+[0;32mI (52460) detection_result:       left eye: (196, 112), right eye: (235, 117), nose: (217, 135), mouth left: (190, 153), mouth right: (221, 157)[0m
+[0;32mI (52710) detection_result: [ 0]: (157,  69, 255, 192)[0m
+[0;32mI (52710) detection_result:       left eye: (195, 110), right eye: (235, 116), nose: (218, 133), mouth left: (190, 152), mouth right: (222, 157)[0m
+[0;32mI (52960) detection_result: [ 0]: (156,  67, 256, 190)[0m
+[0;32mI (52960) detection_result:       left eye: (191, 109), right eye: (230, 114), nose: (213, 132), mouth left: (186, 148), mouth right: (217, 152)[0m
+[0;32mI (63600) detection_result: [ 0]: (109,  73, 206, 190)[0m
+[0;32mI (63600) detection_result:       left eye: (142, 113), right eye: (182, 114), nose: (163, 135), mouth left: (142, 154), mouth right: (173, 155)[0m
+[0;32mI (63860) detection_result: [ 0]: (101,  57, 200, 182)[0m
+[0;32mI (63860) detection_result:       left eye: (129, 103), right eye: (175, 102), nose: (154, 122), mouth left: (132, 147), mouth right: (168, 145)[0m
+[0;32mI (64110) detection_result: [ 0]: (103,  55, 202, 181)[0m
+[0;32mI (64110) detection_result:       left eye: (135,  99), right eye: (178,  98), nose: (161, 120), mouth left: (139, 144), mouth right: (172, 143)[0m
+[0;32mI (64360) detection_result: [ 0]: (110,  53, 207, 179)[0m
+[0;32mI (64360) detection_result:       left eye: (141,  97), right eye: (185,  97), nose: (166, 119), mouth left: (144, 142), mouth right: (179, 143)[0m
+[0;32mI (64620) detection_result: [ 0]: (111,  54, 205, 173)[0m
+[0;32mI (64620) detection_result:       left eye: (140,  96), right eye: (183,  96), nose: (164, 116), mouth left: (143, 141), mouth right: (176, 141)[0m
+[0;32mI (64870) detection_result: [ 0]: (108,  51, 210, 183)[0m
+[0;32mI (64870) detection_result:       left eye: (139,  97), right eye: (185,  96), nose: (165, 119), mouth left: (142, 144), mouth right: (180, 143)[0m
+[0;32mI (65120) detection_result: [ 0]: (109,  54, 207, 181)[0m
+[0;32mI (65120) detection_result:       left eye: (140,  99), right eye: (185,  97), nose: (166, 120), mouth left: (144, 146), mouth right: (180, 145)[0m
+[0;32mI (65380) detection_result: [ 0]: (111,  53, 208, 180)[0m
+[0;32mI (65380) detection_result:       left eye: (141,  97), right eye: (185,  97), nose: (165, 121), mouth left: (143, 144), mouth right: (177, 144)[0m
+[0;32mI (65630) detection_result: [ 0]: (112,  55, 207, 177)[0m
+[0;32mI (65630) detection_result:       left eye: (142,  98), right eye: (186,  98), nose: (165, 118), mouth left: (144, 143), mouth right: (177, 144)[0m
+[0;32mI (87930) detection_result: [ 0]: (168,  66, 269, 197)[0m
+[0;32mI (87930) detection_result:       left eye: (196, 109), right eye: (240, 108), nose: (217, 130), mouth left: (200, 156), mouth right: (232, 154)[0m
+[0;32mI (88180) detection_result: [ 0]: (130,  62, 235, 207)[0m
+[0;32mI (88180) detection_result:       left eye: (154, 113), right eye: (200, 110), nose: (174, 134), mouth left: (158, 160), mouth right: (194, 157)[0m
+[0;32mI (88430) detection_result: [ 0]: (109,  70, 213, 196)[0m
+[0;32mI (88430) detection_result:       left eye: (136, 117), right eye: (180, 109), nose: (160, 128), mouth left: (146, 160), mouth right: (179, 153)[0m
+[0;32mI (88690) detection_result: [ 0]: ( 86,  53, 194, 185)[0m
+[0;32mI (88690) detection_result:       left eye: (112, 103), right eye: (156,  96), nose: (134, 116), mouth left: (124, 145), mouth right: (156, 138)[0m
+[0;32mI (88940) detection_result: [ 0]: ( 86,  64, 190, 196)[0m
+[0;32mI (88940) detection_result:       left eye: (112, 112), right eye: (154, 108), nose: (130, 128), mouth left: (121, 155), mouth right: (153, 151)[0m
+[0;32mI (89190) detection_result: [ 0]: ( 98,  69, 215, 221)[0m
+[0;32mI (89200) detection_result:       left eye: (132, 126), right eye: (178, 122), nose: (154, 147), mouth left: (139, 172), mouth right: (176, 169)[0m
+[0;32mI (89450) detection_result: [ 0]: (121,  64, 233, 206)[0m
+[0;32mI (89450) detection_result:       left eye: (147, 118), right eye: (197, 113), nose: (171, 141), mouth left: (156, 166), mouth right: (193, 161)[0m
+[0;32mI (89700) detection_result: [ 0]: (128,  48, 242, 193)[0m
+[0;32mI (89700) detection_result:       left eye: (159,  98), right eye: (205,  95), nose: (182, 119), mouth left: (165, 142), mouth right: (200, 140)[0m
+[0;32mI (89950) detection_result: [ 0]: (131,  35, 242, 177)[0m
+[0;32mI (89960) detection_result:       left eye: (160,  86), right eye: (209,  81), nose: (186, 102), mouth left: (169, 131), mouth right: (205, 128)[0m
+[0;32mI (90210) detection_result: [ 0]: (125,  34, 241, 187)[0m
+[0;32mI (90210) detection_result:       left eye: (156,  90), right eye: (205,  85), nose: (183, 107), mouth left: (165, 135), mouth right: (203, 131)[0m
+[0;32mI (90460) detection_result: [ 0]: (126,  37, 239, 185)[0m
+[0;32mI (90460) detection_result:       left eye: (155,  90), right eye: (207,  90), nose: (182, 109), mouth left: (161, 137), mouth right: (201, 137)[0m
+[0;32mI (90970) detection_result: [ 0]: (129,  38, 240, 182)[0m
+[0;32mI (90970) detection_result:       left eye: (156,  85), right eye: (209,  86), nose: (182, 103), mouth left: (161, 134), mouth right: (201, 133)[0m
+[0;32mI (91220) detection_result: [ 0]: (129,  36, 243, 181)[0m
+[0;32mI (91220) detection_result:       left eye: (158,  86), right eye: (211,  83), nose: (185, 102), mouth left: (166, 134), mouth right: (205, 132)[0m
+[0;32mI (91480) detection_result: [ 0]: (129,  34, 240, 175)[0m
+[0;32mI (91480) detection_result:       left eye: (156,  83), right eye: (210,  82), nose: (183, 100), mouth left: (162, 131), mouth right: (203, 129)[0m
+[0;32mI (91730) detection_result: [ 0]: (128,  30, 242, 182)[0m
+[0;32mI (91730) detection_result:       left eye: (156,  83), right eye: (210,  84), nose: (183, 105), mouth left: (162, 135), mouth right: (203, 134)[0m
+[0;32mI (91980) detection_result: [ 0]: (127,  33, 242, 185)[0m
+[0;32mI (91980) detection_result:       left eye: (157,  83), right eye: (211,  83), nose: (184, 104), mouth left: (163, 135), mouth right: (206, 134)[0m
+[0;32mI (92240) detection_result: [ 0]: (128,  35, 238, 176)[0m
+[0;32mI (92240) detection_result:       left eye: (156,  84), right eye: (209,  83), nose: (183,  99), mouth left: (163, 131), mouth right: (203, 129)[0m
+[0;32mI (92490) detection_result: [ 0]: (126,  34, 241, 182)[0m
+[0;32mI (92490) detection_result:       left eye: (156,  83), right eye: (209,  82), nose: (182, 100), mouth left: (162, 133), mouth right: (202, 131)[0m
+[0;32mI (92740) detection_result: [ 0]: (126,  33, 239, 180)[0m
+[0;32mI (92740) detection_result:       left eye: (155,  82), right eye: (208,  82), nose: (182, 101), mouth left: (161, 132), mouth right: (202, 131)[0m
+[0;32mI (93000) detection_result: [ 0]: (127,  34, 240, 178)[0m
+[0;32mI (93000) detection_result:       left eye: (155,  81), right eye: (208,  82), nose: (181,  99), mouth left: (160, 131), mouth right: (201, 130)[0m
+[0;32mI (93250) detection_result: [ 0]: (129,  30, 245, 175)[0m
+[0;32mI (93250) detection_result:       left eye: (158,  80), right eye: (210,  79), nose: (185,  98), mouth left: (164, 130), mouth right: (202, 128)[0m
+[0;32mI (93500) detection_result: [ 0]: (133,  31, 241, 161)[0m
+[0;32mI (93500) detection_result:       left eye: (160,  77), right eye: (209,  77), nose: (183,  97), mouth left: (164, 121), mouth right: (199, 120)[0m
+[0;32mI (93760) detection_result: [ 0]: (116,  24, 232, 170)[0m
+[0;32mI (93760) detection_result:       left eye: (146,  77), right eye: (195,  76), nose: (171,  94), mouth left: (151, 123), mouth right: (186, 121)[0m
+[0;32mI (94010) detection_result: [ 0]: (104,  16, 218, 171)[0m
+[0;32mI (94010) detection_result:       left eye: (131,  70), right eye: (182,  69), nose: (155,  89), mouth left: (136, 118), mouth right: (174, 117)[0m
+[0;32mI (94260) detection_result: [ 0]: (102,  19, 205, 145)[0m
+[0;32mI (94260) detection_result:       left eye: (128,  65), right eye: (174,  64), nose: (152,  81), mouth left: (134, 104), mouth right: (167, 103)[0m
+[0;32mI (96540) detection_result: [ 0]: ( 82,  -1, 193, 147)[0m
+[0;32mI (96540) detection_result:       left eye: (109,  54), right eye: (159,  54), nose: (130,  70), mouth left: (113, 102), mouth right: (151, 101)[0m
+[0;32mI (97300) detection_result: [ 0]: ( 99,  44, 207, 188)[0m
+[0;32mI (97300) detection_result:       left eye: (127,  91), right eye: (178,  91), nose: (153, 105), mouth left: (132, 137), mouth right: (171, 137)[0m
+[0;32mI (97560) detection_result: [ 0]: (100,  47, 202, 178)[0m
+[0;32mI (97560) detection_result:       left eye: (126,  91), right eye: (173,  90), nose: (151, 105), mouth left: (131, 135), mouth right: (167, 134)[0m
+[0;32mI (97810) detection_result: [ 0]: (100,  49, 201, 177)[0m
+[0;32mI (97810) detection_result:       left eye: (127,  94), right eye: (170,  92), nose: (152, 113), mouth left: (136, 135), mouth right: (166, 133)[0m
+[0;32mI (98060) detection_result: [ 0]: ( 98,  56, 201, 190)[0m
+[0;32mI (98060) detection_result:       left eye: (125, 102), right eye: (170, 101), nose: (150, 120), mouth left: (132, 146), mouth right: (166, 143)[0m
+[0;32mI (98320) detection_result: [ 0]: ( 97,  59, 197, 191)[0m
+[0;32mI (98320) detection_result:       left eye: (123, 103), right eye: (167, 103), nose: (147, 121), mouth left: (129, 147), mouth right: (163, 146)[0m
+[0;32mI (98570) detection_result: [ 0]: ( 97,  58, 197, 189)[0m
+[0;32mI (98570) detection_result:       left eye: (124, 102), right eye: (169, 102), nose: (149, 119), mouth left: (129, 145), mouth right: (163, 144)[0m
+[0;32mI (98820) detection_result: [ 0]: ( 99,  56, 198, 185)[0m
+[0;32mI (98820) detection_result:       left eye: (125, 101), right eye: (169, 100), nose: (150, 118), mouth left: (133, 143), mouth right: (166, 141)[0m
+[0;32mI (99080) detection_result: [ 0]: ( 98,  56, 199, 187)[0m
+[0;32mI (99080) detection_result:       left eye: (125, 101), right eye: (170,  98), nose: (152, 119), mouth left: (134, 144), mouth right: (168, 141)[0m
+[0;32mI (118590) detection_result: [ 0]: (199,  65, 282, 168)[0m
+[0;32mI (118590) detection_result:       left eye: (234,  96), right eye: (263, 100), nose: (254, 119), mouth left: (233, 135), mouth right: (255, 137)[0m
+[0;32mI (118840) detection_result: [ 0]: (193,  64, 275, 167)[0m
+[0;32mI (118840) detection_result:       left eye: (224,  96), right eye: (254,  98), nose: (243, 117), mouth left: (224, 132), mouth right: (247, 133)[0m
+[0;32mI (125430) detection_result: [ 0]: (169,  58, 265, 167)[0m
+[0;32mI (125430) detection_result:       left eye: (208,  91), right eye: (237,  98), nose: (224, 112), mouth left: (199, 124), mouth right: (223, 130)[0m
+[0;32mI (125680) detection_result: [ 0]: (116,  46, 206, 153)[0m
+[0;32mI (125680) detection_result:       left eye: (150,  82), right eye: (187,  83), nose: (172, 103), mouth left: (151, 118), mouth right: (180, 118)[0m
+[0;32mI (125940) detection_result: [ 0]: ( 99,  53, 178, 160)[0m
+[0;32mI (125940) detection_result:       left eye: (130,  87), right eye: (160,  91), nose: (147, 108), mouth left: (128, 124), mouth right: (153, 126)[0m
+[0;32mI (126190) detection_result: [ 0]: ( 98,  55, 183, 163)[0m
+[0;32mI (126190) detection_result:       left eye: (127,  92), right eye: (164,  93), nose: (146, 113), mouth left: (129, 134), mouth right: (157, 135)[0m
+[0;32mI (126440) detection_result: [ 0]: ( 95,  55, 178, 159)[0m
+[0;32mI (126440) detection_result:       left eye: (121,  94), right eye: (158,  95), nose: (139, 114), mouth left: (124, 134), mouth right: (150, 134)[0m
+[0;32mI (126700) detection_result: [ 0]: ( 84,  54, 168, 165)[0m
+[0;32mI (126700) detection_result:       left eye: (109,  93), right eye: (147,  93), nose: (129, 113), mouth left: (115, 134), mouth right: (143, 134)[0m
+[0;32mI (126950) detection_result: [ 0]: (102,  58, 182, 163)[0m
+[0;32mI (126950) detection_result:       left eye: (125,  94), right eye: (162,  94), nose: (144, 117), mouth left: (129, 134), mouth right: (157, 135)[0m
+[0;32mI (127200) detection_result: [ 0]: ( 99,  53, 186, 164)[0m
+[0;32mI (127200) detection_result:       left eye: (134,  91), right eye: (169,  95), nose: (153, 115), mouth left: (132, 132), mouth right: (158, 136)[0m
+[0;32mI (127460) detection_result: [ 0]: ( 86,  53, 171, 151)[0m
+[0;32mI (127460) detection_result:       left eye: (123,  86), right eye: (153,  92), nose: (138, 110), mouth left: (118, 121), mouth right: (139, 126)[0m
+[0;32mI (127710) detection_result: [ 0]: ( 80,  36, 168, 153)[0m
+[0;32mI (127710) detection_result:       left eye: (114,  74), right eye: (148,  77), nose: (133,  97), mouth left: (113, 113), mouth right: (139, 115)[0m
