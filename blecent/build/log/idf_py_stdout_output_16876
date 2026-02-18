@@ -1,0 +1,62 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\liam0\esp\project\blecent\build\esp-idf\esptool_py && C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:/TCD/IoT/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/liam0/esp/project/blecent/build/partition_table/partition-table.bin C:/Users/liam0/esp/project/blecent/build/blecent.bin"
+blecent.bin binary size 0x81bf0 bytes. Smallest app partition is 0x100000 bytes. 0x7e410 bytes (49%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\liam0\esp\project\blecent\build\bootloader\esp-idf\esptool_py && C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:/TCD/IoT/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/liam0/esp/project/blecent/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TCD\IoT\components\esptool_py && C:\Users\liam0\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/TCD/IoT -D SERIAL_TOOL=C:/Users/liam0/.espressif/python_env/idf5.5_py3.12_env/Scripts/python.exe;;C:/TCD/IoT/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/liam0/esp/project/blecent/build -P C:/TCD/IoT/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM7 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 blecent.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port COM7
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 80:b5:4e:e8:18:c0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00091fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21056 bytes to 13395...
+Writing at 0x00000000... (100 %)
+Wrote 21056 bytes (13395 compressed) at 0x00000000 in 0.3 seconds (effective 511.0 kbit/s)...
+Hash of data verified.
+Compressed 531440 bytes to 317825...
+Writing at 0x00010000... (5 %)
+Writing at 0x0001c413... (10 %)
+Writing at 0x000251c8... (15 %)
+Writing at 0x0002cd04... (20 %)
+Writing at 0x00032874... (25 %)
+Writing at 0x00038bb4... (30 %)
+Writing at 0x0003f87d... (35 %)
+Writing at 0x000456a4... (40 %)
+Writing at 0x0004b6cd... (45 %)
+Writing at 0x00051805... (50 %)
+Writing at 0x00057727... (55 %)
+Writing at 0x0005da3e... (60 %)
+Writing at 0x0006337d... (65 %)
+Writing at 0x00068f03... (70 %)
+Writing at 0x0006e65a... (75 %)
+Writing at 0x000741bc... (80 %)
+Writing at 0x0007cded... (85 %)
+Writing at 0x00082eb0... (90 %)
+Writing at 0x00088a0a... (95 %)
+Writing at 0x0008ef51... (100 %)
+Wrote 531440 bytes (317825 compressed) at 0x00010000 in 3.4 seconds (effective 1237.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 555.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
