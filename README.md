@@ -4,4 +4,4 @@
 
 ---
 
-![Group Mascot](group_mascot.png)
+![Group Mascot](CloudserverGateway/http/group_mascot.png)
