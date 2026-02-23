@@ -2,6 +2,7 @@ from flask import Flask, request
 import requests
 
 app = Flask(__name__)
+presigned_url = "https://robo-bouncer-bucket.s3.amazonaws.com/uploaded_image?AWSAccessKeyId=ASIA4OI6LYNOI2O6HHWU&Signature=0b1qLeVLYhn3v9axgRRLLDemp8E%3D&content-type=image%2Fjpeg&x-amz-security-token=IQoJb3JpZ2luX2VjEBcaCWV1LXdlc3QtMSJGMEQCIBwycwJztPCfdSRBUMgfn5%2FQ86u2R1eUB7EfP08iUvWfAiAboNM1LkEV7a5td8bqJJPDWUHHDY8FnwGg%2BlYRFngAsyqDAwjg%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDg1NTI5OTA0ODI4NCIMKeZSXd%2B7seTTOuUmKtcCbg%2FxCHa8JKeqAai9MlpXWwl0OHUmGt50hrECqPvV5EDpoJfYGrJHloQJJIlK5uP9GdbiySwj7Arlz%2Bq%2F%2BH0uESbrhJx4lg%2ByNlMCat4zJI5sbVgZOLvfsm8nVZ9X3cWxVefcnoRjuemo1pxQr3sfixk79rPEsUhPYs8eFo%2Fd5mfYRXrEdPc5vr5D8b45en%2BgUQjusVa1tjc%2F6cyOzYX9K%2BIiP3jGVUNFRNlgpyVlLyLA8QoVo92jmMqEkTmdJzPeRwR606FAphFQMX4isgjwwD%2BfOzFTlHerIf0Zl8aQZKMLTY2eZzotbDbce9UrDFSTz9bXK89BmvzjGZAwtuwlc1LFt%2FXSSmSrEAqS9k7HIwtp%2F8EP3o3aavuPuuD9wM%2Fch0N7Bo3udpYP93HC%2FaxYVO9XMSTHh74THuahq06eEUA5o1V4FU1VYISJwWylY8YXULg6m4eaPzCe0fHMBjqmAUyson2lBua5Y8v%2BCheRBy2Z24mGjX3s6vmNhhgSqfbXdaoQkoUr0AYBuPLkNKpKy3R33ZgN%2BYCgPeWErIFPQerlzICND30dcJda1fp7nvXhN4fPmgOdbXV47F0YdyGQt6EKf86iXGUzpbNcSm6FSVXbFeO4kT7N3%2FWhrjnHA8C7TVWbmNmPyEKPXp7XqgdHG958kSYCblNcWgRSWExeMX1BcJWTPjw%3D&Expires=1772462878"
 
 @app.route("/")
 def home():
@@ -16,20 +17,24 @@ def upload():
 
     # Save the image
     image.save("uploaded_image.png")
+    
+    return "POST request received successfully", 200
 
-    # Upload image to S3 using the presigned URL
-    presigned_url = "https://robo-bouncer-bucket.s3.amazonaws.com/uploaded_image?AWSAccessKeyId=ASIA4OI6LYNOI2O6HHWU&Signature=0b1qLeVLYhn3v9axgRRLLDemp8E%3D&content-type=image%2Fjpeg&x-amz-security-token=IQoJb3JpZ2luX2VjEBcaCWV1LXdlc3QtMSJGMEQCIBwycwJztPCfdSRBUMgfn5%2FQ86u2R1eUB7EfP08iUvWfAiAboNM1LkEV7a5td8bqJJPDWUHHDY8FnwGg%2BlYRFngAsyqDAwjg%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDg1NTI5OTA0ODI4NCIMKeZSXd%2B7seTTOuUmKtcCbg%2FxCHa8JKeqAai9MlpXWwl0OHUmGt50hrECqPvV5EDpoJfYGrJHloQJJIlK5uP9GdbiySwj7Arlz%2Bq%2F%2BH0uESbrhJx4lg%2ByNlMCat4zJI5sbVgZOLvfsm8nVZ9X3cWxVefcnoRjuemo1pxQr3sfixk79rPEsUhPYs8eFo%2Fd5mfYRXrEdPc5vr5D8b45en%2BgUQjusVa1tjc%2F6cyOzYX9K%2BIiP3jGVUNFRNlgpyVlLyLA8QoVo92jmMqEkTmdJzPeRwR606FAphFQMX4isgjwwD%2BfOzFTlHerIf0Zl8aQZKMLTY2eZzotbDbce9UrDFSTz9bXK89BmvzjGZAwtuwlc1LFt%2FXSSmSrEAqS9k7HIwtp%2F8EP3o3aavuPuuD9wM%2Fch0N7Bo3udpYP93HC%2FaxYVO9XMSTHh74THuahq06eEUA5o1V4FU1VYISJwWylY8YXULg6m4eaPzCe0fHMBjqmAUyson2lBua5Y8v%2BCheRBy2Z24mGjX3s6vmNhhgSqfbXdaoQkoUr0AYBuPLkNKpKy3R33ZgN%2BYCgPeWErIFPQerlzICND30dcJda1fp7nvXhN4fPmgOdbXV47F0YdyGQt6EKf86iXGUzpbNcSm6FSVXbFeO4kT7N3%2FWhrjnHA8C7TVWbmNmPyEKPXp7XqgdHG958kSYCblNcWgRSWExeMX1BcJWTPjw%3D&Expires=1772462878"
+@app.route("/image", methods=["PUT"])
+def put():
+    if "image" not in request.files:
+        return "No image uploaded", 400
+    
+    image = request.files["image"]
+
     response = requests.put(
         presigned_url,
         data=image.read(),
-        headers={"Content-Type": image.content_type}
+        headers={"Content-Type": "image/jpeg", },
     )
 
-    if response.status_code != 200:
-        return "Upload to S3 failed", 500
-
-    return "POST request received successfully", 200
-
+    print(response.text)
+    return f"Forwarded with status {response.status_code}", response.status_code
 
 if __name__ == "__main__":
-    app.run(host="172.20.10.4", port=5000, debug=False)
+    app.run(host="172.20.10.11", port=5000, debug=True)
