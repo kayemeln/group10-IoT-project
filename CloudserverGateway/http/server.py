@@ -3,9 +3,21 @@ import socketserver
 
 PORT = 8080
 
-Handler = http.server.SimpleHTTPRequestHandler
+class CustomHandler(http.server.SimpleHTTPRequestHandler):
+    def do_POST(self):
+        content_length = int(self.headers['Content-length'])
 
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
+        post_data = self.rfile.read(content_length)
+
+        print(f"Recieved POST data: {post_data.decode('utf-8')}")
+
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html')
+        self.end_headers()
+
+        response_message = b"POST request recieved successfully"
+        self.wfile.write(response_message)
+    
+with socketserver.TCPServer(("", PORT), CustomHandler) as httpd:
     print(f"Serving at port {PORT}")
-    # Start server until stopped
     httpd.serve_forever()
