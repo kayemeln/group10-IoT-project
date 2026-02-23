@@ -1,0 +1,8 @@
+### This file should be called mosquitto.conf and defines all of the rules of the mosquitto broker 
+
+listener 1883 
+password_file /opt/homebrew/etc/mosquitto/passwd    // Defines the location of the password file 
+allow_anonymous false   // Trivial 
+
+
+
