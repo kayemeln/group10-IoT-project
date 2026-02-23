@@ -10,15 +10,24 @@ def home():
 
 @app.route("/upload", methods=["POST"])
 def upload():
-    if "image" not in request.files:
+    image_bytes = request.data
+    if not image_bytes:
         return "No image uploaded", 400
 
-    image = request.files["image"]
+    with open("uploaded_image.jpg", "wb") as f:
+        f.write(image_bytes)
 
-    # Save the image
-    image.save("uploaded_image.png")
-    
-    return "POST request received successfully", 200
+    response = requests.put(
+        presigned_url,
+        data=image_bytes,
+        headers={"Content-Type": "image/jpeg", },
+        timeout=30,
+    )
+
+    if response.status_code != 200:
+        return f"Upload failed: {response.text}", 500
+
+    return f"Forwarded with status {response.status_code}", response.status_code
 
 @app.route("/image", methods=["PUT"])
 def put():
@@ -33,8 +42,7 @@ def put():
         headers={"Content-Type": "image/jpeg", },
     )
 
-    print(response.text)
     return f"Forwarded with status {response.status_code}", response.status_code
 
 if __name__ == "__main__":
-    app.run(host="172.20.10.11", port=5000, debug=True)
+    app.run(host="172.20.10.2", port=5000, debug=True)

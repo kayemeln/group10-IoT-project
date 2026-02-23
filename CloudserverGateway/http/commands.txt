@@ -1,0 +1,2 @@
+curl -v -X PUT -F "image=@group_mascot.png" http://172.20.10.11:5000/image
+curl -v -X POST -F "image=@group_mascot.png" http://172.20.10.11:5000/upload
