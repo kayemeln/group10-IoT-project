@@ -1,0 +1,218 @@
+Command: C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\TCD\IoT\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_2\build\human_face_detection_web.elf C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_2\build\bootloader\bootloader.elf --force-color -m 'C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\TCD\IoT\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a55e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (177) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (178) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (178) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (178) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (178) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (178) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (179) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (179) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (179) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (179) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (180) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (180) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (181) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (181) esp_psram: Speed: 80MHz[0m
+[0;32mI (181) cpu_start: Multicore app[0m
+[0;32mI (190) cpu_start: Pro cpu start user code[0m
+[0;32mI (190) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (190) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (190) app_init: App version:      v1.1.0[0m
+[0;32mI (190) app_init: Compile time:     Feb 23 2026 10:15:58[0m
+[0;32mI (191) app_init: ELF file SHA256:  63f5a2f46...[0m
+[0;32mI (191) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (191) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (191) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (191) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (191) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (192) heap_init: At 3FCAB280 len 0003E490 (249 KiB): RAM[0m
+[0;32mI (192) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (192) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (192) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (193) spi_flash: detected chip: gd[0m
+[0;32mI (193) spi_flash: flash io: qio[0m
+[0;33mW (193) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (194) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (194) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (195) main_task: Started on CPU0[0m
+[0;32mI (205) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (205) main_task: Calling app_main()[0m
+[0;32mI (215) pp: pp rom version: e7ae62f[0m
+[0;32mI (215) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (225) wifi:wifi driver task: 3fceea00, prio:23, stack:6656, core=0[0m
+[0;32mI (225) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (225) wifi:wifi certification version: v7.0[0m
+[0;32mI (225) wifi:config NVS flash: enabled[0m
+[0;32mI (225) wifi:config nano formatting: disabled[0m
+[0;32mI (225) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (225) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (225) wifi:Init management short buffer num: 32[0m
+[0;32mI (225) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (225) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (225) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (225) wifi:Init static rx buffer num: 10[0m
+[0;32mI (225) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (225) wifi_init: rx ba win: 6[0m
+[0;32mI (225) wifi_init: accept mbox: 6[0m
+[0;32mI (225) wifi_init: tcpip mbox: 32[0m
+[0;32mI (225) wifi_init: udp mbox: 6[0m
+[0;32mI (225) wifi_init: tcp mbox: 6[0m
+[0;32mI (225) wifi_init: tcp tx win: 5760[0m
+[0;32mI (225) wifi_init: tcp rx win: 5760[0m
+[0;32mI (225) wifi_init: tcp mss: 1440[0m
+[0;32mI (225) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (225) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (235) camera wifi: wifi_init_softap finished.SSID:Human Face Detection password:[0m
+[0;32mI (235) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (265) wifi:mode : softAP (80:b5:4e:e8:18:c1)[0m
+[0;32mI (265) wifi:Total power save buffer number: 16[0m
+[0;32mI (265) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (265) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (275) wifi:Set ps type: 0, coexist: 0[0m
+[0;32mI (275) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+
+[0;32mI (275) camera wifi: wifi init finished.[0m
+[0;32mI (275) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (275) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (275) cam_hal: cam init ok[0m
+[0;32mI (275) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (275) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (285) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (285) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (285) camera: Detected OV5640 camera[0m
+[0;32mI (285) camera: Detected camera at address=0x3c[0m
+[0;32mI (965) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (965) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (965) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (965) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (965) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (965) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (965) cam_hal: cam config ok[0m
+[0;32mI (975) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (975) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (995) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (995) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (995) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (995) main_task: Returned from app_main()[0m
+[0;33mW (5945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (9945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (13945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (17945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (21945) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (24525) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (24525) wifi:station: 0a:26:45:be:36:ee join, AID=1, bgn, 20[0m
+[0;32mI (24525) camera wifi: station:0a:26:45:be:36:ee join, AID=1[0m
+[0;32mI (24585) wifi:<ba-add>idx:2 (ifx:1, 0a:26:45:be:36:ee), tid:0, ssn:0, winSize:64[0m
+[0;32mI (25755) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;33mW (25945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (29945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (33945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (37945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (41945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (45945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (49945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (53945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (57945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (61945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (65945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (69945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (72555) httpd_uri: httpd_uri: URI '/stream' not found[0m
+[0;33mW (72555) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (73945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (77945) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (94115) cam_hal: Failed to get frame: timeout[0m
+E BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403768fd
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (267) phy_init: Saving new calibration data due to checksum faI (1067) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1067) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (1067) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (1067) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (1067) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1067) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1067) cam_hal: cam config ok[0m
+[0;32mI (1077) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (1077) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (1097) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (1097) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (1097) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (1097) main_task: Returned from app_main()[0m
+[0;32mI (3387) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3387) wifi:station: 0a:26:45:be:36:ee join, AID=1, bgn, 20[0m
+[0;32mI (3387) camera wifi: station:0a:26:45:be:36:ee join, AID=1[0m
+[0;32mI (3477) wifi:<ba-add>idx:2 (ifx:1, 0a:26:45:be:36:ee), tid:0, ssn:356, winSize:64[0m
+[0;33mW (15927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (19927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (23927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (27927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (31927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (35927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (39927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (43927) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (44757) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (44757) wifi:station: 30:05:05:eb:09:7e join, AID=2, bgn, 20[0m
+[0;32mI (44757) camera wifi: station:30:05:05:eb:09:7e join, AID=2[0m
+[0;32mI (44797) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (44897) wifi:<ba-add>idx:3 (ifx:1, 30:05:05:eb:09:7e), tid:0, ssn:5, winSize:64[0m
+[0;33mW (47927) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (48607) wifi:<ba-add>idx:4 (ifx:1, 0a:26:45:be:36:ee), tid:1, ssn:0, winSize:64[0m
+[0;33mW (51927) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (54897) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;33mW (55927) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (56107) wifi:<ba-add>idx:5 (ifx:1, 30:05:05:eb:09:7e), tid:7, ssn:2, winSize:64[0m
+[0;33mW (59927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (63927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (67927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (71927) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (72687) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (72687) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (75977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (79977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (83977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (87977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (91977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (95977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (99977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (103977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (107977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (111977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (115977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (119977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (123977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (127977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (131977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (135977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (139977) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (152247) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (156247) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (160247) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (164247) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (182907) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (186907) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (190907) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (194907) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (198907) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (202907) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (206907) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (210907) cam_hal: Failed to get frame: timeout[0m
