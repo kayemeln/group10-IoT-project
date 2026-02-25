@@ -13,7 +13,7 @@ def upload():
     image_bytes = request.data
     if not image_bytes:
         return "No image uploaded", 400
-
+    
     with open("uploaded_image.jpg", "wb") as f:
         f.write(image_bytes)
 
@@ -46,3 +46,10 @@ def put():
 
 if __name__ == "__main__":
     app.run(host="172.20.10.2", port=5000, debug=True)
+
+@app.route("/message", methods=["POST"])
+def message():
+    message = request.data
+
+    response = requests.put()
+    return f"Message recieved and forwarded to ESP32 {response.status_code}", 
