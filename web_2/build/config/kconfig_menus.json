@@ -6814,6 +6814,47 @@
     {
         "children": [
             {
+                "children": [],
+                "depends_on": null,
+                "help": "Target endpoint for sending camera images.",
+                "id": "HTTP_SERVER_ENDPOINT",
+                "name": "HTTP_SERVER_ENDPOINT",
+                "range": null,
+                "title": "Target HTTP Server Endpoint",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Path on the server where images will be uploaded.",
+                "id": "HTTP_SERVER_PATH",
+                "name": "HTTP_SERVER_PATH",
+                "range": null,
+                "title": "HTTP Server Upload Path",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Interval between image uploads in seconds.",
+                "id": "HTTP_CLIENT_UPLOAD_INTERVAL",
+                "name": "HTTP_CLIENT_UPLOAD_INTERVAL",
+                "range": [
+                    1,
+                    3600
+                ],
+                "title": "Upload Interval (seconds)",
+                "type": "int"
+            }
+        ],
+        "depends_on": null,
+        "id": "http-client-configuration",
+        "title": "HTTP Client Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [
                     {
                         "children": [],
@@ -36845,7 +36886,29 @@
                         "type": "bool"
                     },
                     {
-                        "children": [],
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "CAMERA_AF_SUPPORT",
+                                        "help": "Default timeout used for autofocus operations (firmware load, trigger/wait).",
+                                        "id": "CAMERA_AF_DEFAULT_TIMEOUT_MS",
+                                        "name": "CAMERA_AF_DEFAULT_TIMEOUT_MS",
+                                        "range": null,
+                                        "title": "Autofocus default timeout (ms)",
+                                        "type": "int"
+                                    }
+                                ],
+                                "depends_on": "OV5640_SUPPORT",
+                                "help": "Enable OV5640 autofocus support via the esp_camera_af API.\nIf disabled, the AF API will return ESP_ERR_NOT_SUPPORTED.",
+                                "id": "CAMERA_AF_SUPPORT",
+                                "name": "CAMERA_AF_SUPPORT",
+                                "range": null,
+                                "title": "Enable autofocus (OV5640)",
+                                "type": "bool"
+                            }
+                        ],
                         "depends_on": null,
                         "help": "Enable this option if you want to use the OV5640.\nDisable this option to save memory.",
                         "id": "OV5640_SUPPORT",

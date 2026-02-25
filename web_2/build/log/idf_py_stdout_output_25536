@@ -1,0 +1,1873 @@
+Command: C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\TCD\IoT\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_2\build\human_face_detection_web.elf C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_2\build\bootloader\bootloader.elf --force-color -m 'C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\TCD\IoT\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (192) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (192) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (193) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (193) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (194) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (194) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (195) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (205) app_init: App version:      v1.1.0[0m
+[0;32mI (205) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (206) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (207) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (208) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (209) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (290) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (290) wifi:enable tsf[0m
+[0;32mI (290) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (290) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (310) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (520) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (520) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (520) wifi:pm start, type: 0[0m
+
+[0;32mI (520) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (520) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (560) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1560) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1560) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1560) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1560) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1560) cam_hal: cam init ok[0m
+[0;32mI (1560) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1560) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1570) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1570) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1570) camera: Detected OV5640 camera[0m
+[0;32mI (1570) camera: Detected camera at address=0x3c[0m
+[0;32mI (2250) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2250) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2250) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2250) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2250) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2250) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2250) cam_hal: cam config ok[0m
+[0;32mI (2260) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2260) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2280) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2280) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2280) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2280) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2280) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2280) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2280) app_main: Application initialization complete[0m
+[0;32mI (2280) main_task: Returned from app_main()[0m
+[0;32mI (3230) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3230) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3230) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000c9e  
+A14     : 0x3c0cf178  A15     : 0x3fcae484  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (207) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (208) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (209) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (290) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (300) wifi:enable tsf[0m
+[0;32mI (300) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (320) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (400) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (400) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (400) wifi:pm start, type: 0[0m
+
+[0;32mI (400) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (400) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (500) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1450) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1450) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1450) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1450) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1450) cam_hal: cam init ok[0m
+[0;32mI (1450) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1450) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1460) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1460) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1460) camera: Detected OV5640 camera[0m
+[0;32mI (1460) camera: Detected camera at address=0x3c[0m
+[0;32mI (2140) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2140) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2140) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2140) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2140) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2140) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2140) cam_hal: cam config ok[0m
+[0;32mI (2150) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2150) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2170) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2170) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2170) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2170) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2170) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2170) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2170) app_main: Application initialization complete[0m
+[0;32mI (2170) main_task: Returned from app_main()[0m
+[0;32mI (3120) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3120) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3120) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000c30  
+A14     : 0x3c0cf178  A15     : 0x3fcae484  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (206) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (207) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (208) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (209) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (290) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (300) wifi:enable tsf[0m
+[0;32mI (300) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (320) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (340) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (340) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (350) wifi:pm start, type: 0[0m
+
+[0;32mI (350) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (350) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (350) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1370) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1370) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1370) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1370) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1370) cam_hal: cam init ok[0m
+[0;32mI (1370) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1370) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1380) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1380) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1380) camera: Detected OV5640 camera[0m
+[0;32mI (1380) camera: Detected camera at address=0x3c[0m
+[0;32mI (2060) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2060) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2060) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2060) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2060) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2060) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2060) cam_hal: cam config ok[0m
+[0;32mI (2070) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2070) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2090) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2090) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2090) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2090) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2090) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2090) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2090) app_main: Application initialization complete[0m
+[0;32mI (2090) main_task: Returned from app_main()[0m
+[0;32mI (3040) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3040) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3040) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0da0  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15d0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d60  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000be0  
+A14     : 0x3c0cf178  A15     : 0x3fcae484  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0da0 0x4200b197:0x3fcd0dc0 0x4037e5e1:0x3fcd16d0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (206) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (207) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (208) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (209) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (300) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (300) wifi:enable tsf[0m
+[0;32mI (300) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (310) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (340) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (340) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (350) wifi:pm start, type: 0[0m
+
+[0;32mI (350) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (350) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (380) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1390) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1390) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1390) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1390) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1390) cam_hal: cam init ok[0m
+[0;32mI (1390) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1390) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1400) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1400) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1400) camera: Detected OV5640 camera[0m
+[0;32mI (1400) camera: Detected camera at address=0x3c[0m
+[0;32mI (2080) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2080) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2080) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2080) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2080) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2080) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2080) cam_hal: cam config ok[0m
+[0;32mI (2090) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2090) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2110) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2110) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2110) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2110) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2110) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2110) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2110) app_main: Application initialization complete[0m
+[0;32mI (2110) main_task: Returned from app_main()[0m
+[0;32mI (3060) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3060) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3060) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000bf4  
+A14     : 0x3c0cf178  A15     : 0x3fcae47c  SAR     : 0x00000018  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (208) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (209) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (210) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (290) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (290) wifi:enable tsf[0m
+[0;32mI (290) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (320) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (340) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (340) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (350) wifi:pm start, type: 0[0m
+
+[0;32mI (350) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (350) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (390) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1380) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1380) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1380) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1380) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1380) cam_hal: cam init ok[0m
+[0;32mI (1380) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1380) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1390) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1390) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1390) camera: Detected OV5640 camera[0m
+[0;32mI (1390) camera: Detected camera at address=0x3c[0m
+[0;32mI (2070) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2070) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2070) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2070) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2070) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2070) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2070) cam_hal: cam config ok[0m
+[0;32mI (2080) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2080) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2100) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2100) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2100) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2100) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2100) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2100) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2100) app_main: Application initialization complete[0m
+[0;32mI (2100) main_task: Returned from app_main()[0m
+[0;32mI (3050) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3050) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3050) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000bea  
+A14     : 0x3c0cf178  A15     : 0x3fcae484  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (208) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (209) spi_flash: flash io: qio[0m
+[0;33mW (209) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (210) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (290) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (290) wifi:enable tsf[0m
+[0;32mI (290) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (310) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (310) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (320) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (320) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (350) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (350) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (350) wifi:pm start, type: 0[0m
+
+[0;32mI (350) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (350) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (410) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1380) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1380) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1380) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1380) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1380) cam_hal: cam init ok[0m
+[0;32mI (1380) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1380) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1390) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1390) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1390) camera: Detected OV5640 camera[0m
+[0;32mI (1390) camera: Detected camera at address=0x3c[0m
+[0;32mI (2070) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2070) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2070) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2070) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2070) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2070) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2070) cam_hal: cam config ok[0m
+[0;32mI (2080) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2080) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2100) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2100) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2100) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2100) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2100) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2100) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2100) app_main: Application initialization complete[0m
+[0;32mI (2100) main_task: Returned from app_main()[0m
+[0;32mI (3050) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3050) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3050) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000bea  
+A14     : 0x3c0cf178  A15     : 0x3fcae490  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (208) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (209) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (210) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (300) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (300) wifi:enable tsf[0m
+[0;32mI (300) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (320) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (340) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (340) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (350) wifi:pm start, type: 0[0m
+
+[0;32mI (350) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (350) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (430) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1440) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1440) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1440) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1440) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1440) cam_hal: cam init ok[0m
+[0;32mI (1440) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1440) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1450) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1450) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1450) camera: Detected OV5640 camera[0m
+[0;32mI (1450) camera: Detected camera at address=0x3c[0m
+[0;32mI (2130) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2130) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2130) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2130) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2130) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2130) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2130) cam_hal: cam config ok[0m
+[0;32mI (2140) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2140) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2160) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2160) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2160) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2160) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2160) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2160) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2160) app_main: Application initialization complete[0m
+[0;32mI (2160) main_task: Returned from app_main()[0m
+[0;32mI (3110) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3110) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3110) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000c26  
+A14     : 0x3c0cf178  A15     : 0x3fcae484  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (207) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (208) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (209) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (310) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (310) wifi:enable tsf[0m
+[0;32mI (310) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (310) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (320) camera wifi: wifi init finished.[0m
+[0;32mI (320) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (320) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (330) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (330) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (360) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (360) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (370) wifi:pm start, type: 0[0m
+
+[0;32mI (370) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (370) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (390) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1410) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1410) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1410) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1410) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1410) cam_hal: cam init ok[0m
+[0;32mI (1410) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1410) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1420) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1420) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1420) camera: Detected OV5640 camera[0m
+[0;32mI (1420) camera: Detected camera at address=0x3c[0m
+[0;32mI (2100) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2100) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2100) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2100) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2100) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2100) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2100) cam_hal: cam config ok[0m
+[0;32mI (2110) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2110) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2130) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2130) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2130) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2130) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2130) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2130) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2140) app_main: Application initialization complete[0m
+[0;32mI (2140) main_task: Returned from app_main()[0m
+[0;32mI (3080) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3080) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3080) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000c08  
+A14     : 0x3c0cf178  A15     : 0x3fcae490  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (208) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (208) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (208) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (209) spi_flash: detected chip: gd[0m
+[0;32mI (209) spi_flash: flash io: qio[0m
+[0;33mW (209) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (210) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (210) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (211) main_task: Started on CPU0[0m
+[0;32mI (221) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (221) main_task: Calling app_main()[0m
+[0;32mI (221) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (241) pp: pp rom version: e7ae62f[0m
+[0;32mI (241) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (251) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (251) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (261) wifi:wifi certification version: v7.0[0m
+[0;32mI (261) wifi:config NVS flash: enabled[0m
+[0;32mI (261) wifi:config nano formatting: disabled[0m
+[0;32mI (261) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (261) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (261) wifi:Init management short buffer num: 32[0m
+[0;32mI (261) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (261) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (261) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (261) wifi:Init static rx buffer num: 10[0m
+[0;32mI (261) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (261) wifi_init: rx ba win: 6[0m
+[0;32mI (261) wifi_init: accept mbox: 6[0m
+[0;32mI (261) wifi_init: tcpip mbox: 32[0m
+[0;32mI (261) wifi_init: udp mbox: 6[0m
+[0;32mI (261) wifi_init: tcp mbox: 6[0m
+[0;32mI (261) wifi_init: tcp tx win: 5760[0m
+[0;32mI (261) wifi_init: tcp rx win: 5760[0m
+[0;32mI (261) wifi_init: tcp mss: 1440[0m
+[0;32mI (261) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (261) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (261) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (261) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (261) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (261) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (291) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (291) wifi:enable tsf[0m
+[0;32mI (291) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (301) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (301) camera wifi: wifi init finished.[0m
+[0;32mI (301) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (301) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (311) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (311) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (411) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (411) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (411) wifi:pm start, type: 0[0m
+
+[0;32mI (411) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (411) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (491) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1491) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1491) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1491) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1491) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1491) cam_hal: cam init ok[0m
+[0;32mI (1491) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1491) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1501) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1501) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1501) camera: Detected OV5640 camera[0m
+[0;32mI (1501) camera: Detected camera at address=0x3c[0m
+[0;32mI (2181) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2181) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2181) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2181) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2181) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2181) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2181) cam_hal: cam config ok[0m
+[0;32mI (2191) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2191) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2211) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2211) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2211) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2211) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2211) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2211) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2211) app_main: Application initialization complete[0m
+[0;32mI (2211) main_task: Returned from app_main()[0m
+[0;32mI (3161) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3161) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3161) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000c59  
+A14     : 0x3c0cf178  A15     : 0x3fcae484  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (206) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (207) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (208) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (209) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (290) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (290) wifi:enable tsf[0m
+[0;32mI (290) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (320) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (360) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (360) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (360) wifi:pm start, type: 0[0m
+
+[0;32mI (360) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (360) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (500) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1410) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1410) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1410) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1410) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1410) cam_hal: cam init ok[0m
+[0;32mI (1410) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1410) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1420) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1420) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1420) camera: Detected OV5640 camera[0m
+[0;32mI (1420) camera: Detected camera at address=0x3c[0m
+[0;32mI (2100) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2100) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2100) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2100) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2100) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2100) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2100) cam_hal: cam config ok[0m
+[0;32mI (2110) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2110) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2130) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2130) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2130) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2130) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2130) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2130) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2130) app_main: Application initialization complete[0m
+[0;32mI (2130) main_task: Returned from app_main()[0m
+[0;32mI (3080) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3080) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3080) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000c08  
+A14     : 0x3c0cf178  A15     : 0x3fcae47c  SAR     : 0x00000018  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (208) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (209) spi_flash: flash io: qio[0m
+[0;33mW (209) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (210) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (300) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (300) wifi:enable tsf[0m
+[0;32mI (300) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (330) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (350) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (350) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (360) wifi:pm start, type: 0[0m
+
+[0;32mI (360) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (360) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (590) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1390) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1390) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1390) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1390) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1390) cam_hal: cam init ok[0m
+[0;32mI (1390) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1390) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1400) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1400) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1400) camera: Detected OV5640 camera[0m
+[0;32mI (1400) camera: Detected camera at address=0x3c[0m
+[0;32mI (2080) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2080) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2080) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2080) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2080) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2080) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2080) cam_hal: cam config ok[0m
+[0;32mI (2090) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2090) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2110) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2110) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2110) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2110) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2110) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2110) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2110) app_main: Application initialization complete[0m
+[0;32mI (2110) main_task: Returned from app_main()[0m
+[0;32mI (3060) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3060) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3060) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000bf4  
+A14     : 0x3c0cf178  A15     : 0x3fcae484  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (194) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (195) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (208) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (209) spi_flash: flash io: qio[0m
+[0;33mW (209) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (210) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (290) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (290) wifi:enable tsf[0m
+[0;32mI (300) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (310) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (340) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (340) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (350) wifi:pm start, type: 0[0m
+
+[0;32mI (350) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (350) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (400) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1370) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1370) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1370) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1370) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1370) cam_hal: cam init ok[0m
+[0;32mI (1370) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1370) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1380) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1380) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1380) camera: Detected OV5640 camera[0m
+[0;32mI (1380) camera: Detected camera at address=0x3c[0m
+[0;32mI (2060) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2060) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2060) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2060) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2060) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2060) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2060) cam_hal: cam config ok[0m
+[0;32mI (2070) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2070) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2090) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2090) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2090) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2090) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2090) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2090) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000upload[0m
+[0;32mI (2090) app_main: Application initialization complete[0m
+[0;32mI (2090) main_task: Returned from app_main()[0m
+[0;32mI (3040) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (3040) HTTP_CLIENT: Error parse url http://172.20.10.11:5000upload[0m
+[1;31mE (3040) HTTP_CLIENT: Failed to set URL[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x420ad29b  PS      : 0x00060e30  A0      : 0x8200b19a  A1      : 0x3fcd0d90  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x3c0c5a4c  A5      : 0x3c0cf550  
+A6      : 0x3fcd15c0  A7      : 0x00000102  A8      : 0x82043f2a  A9      : 0x3fcd0d50  
+A10     : 0x00000000  A11     : 0x3c0cf178  A12     : 0x3c0cf754  A13     : 0x00000be0  
+A14     : 0x3c0cf178  A15     : 0x3fcae490  SAR     : 0x00000020  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x420ad298:0x3fcd0d90 0x4200b197:0x3fcd0db0 0x4037e5e1:0x3fcd16c0
+
+
+
+
+ELF file SHA256: 22da8b0cc
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (193) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (193) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (194) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (195) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (195) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (206) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 16:19:27[0m
+[0;32mI (206) app_init: ELF file SHA256:  22da8b0cc...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (208) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (208) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (209) spi_flash: detected chip: gd[0m
+[0;32mI (209) spi_flash: flash io: qio[0m
+[0;33mW (209) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (210) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (300) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (300) wifi:enable tsf[0m
+[0;32mI (300) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (320) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (340) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (340) wifi:security: WPA2-PSK, phy: bgn, rssi: -37[0m
+[0;32mI (350) wifi:pm start, type: 0[0m
+
+[0;32mI (350) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (350) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (430) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1380) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1380) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1380) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1380) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1380) cam_hal: cam init ok[0m
+[0;32mI (1380) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1380) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1390) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1390) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1390) camera: Detected OV5640 camera[0m
+[0;32mI (1390) camera: Detected camera at address=0x3c[0m

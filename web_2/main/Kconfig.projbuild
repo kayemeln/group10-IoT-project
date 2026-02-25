@@ -1,0 +1,20 @@
+menu "HTTP Client Configuration"
+    config HTTP_SERVER_ENDPOINT
+        string "Target HTTP Server Endpoint"
+        default "170.20.10.5:8080"
+        help
+            Target endpoint for sending camera images.
+    
+    config HTTP_SERVER_PATH
+        string "HTTP Server Upload Path"
+        default "/upload"
+        help
+            Path on the server where images will be uploaded.
+            
+    config HTTP_CLIENT_UPLOAD_INTERVAL
+        int "Upload Interval (seconds)"
+        default 5
+        range 1 3600
+        help
+            Interval between image uploads in seconds.
+endmenu

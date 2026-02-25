@@ -1,0 +1,809 @@
+Command: C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\TCD\IoT\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_2\build\human_face_detection_web.elf C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_2\build\bootloader\bootloader.elf --force-color -m 'C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\TCD\IoT\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (192) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (192) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (192) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (193) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (193) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (194) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (194) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (195) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (205) app_init: App version:      v1.1.0[0m
+[0;32mI (205) app_init: Compile time:     Feb 23 2026 16:24:08[0m
+[0;32mI (205) app_init: ELF file SHA256:  7eaa60ae7...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (206) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (206) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (207) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (208) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (209) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (250) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (300) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (300) wifi:enable tsf[0m
+[0;32mI (300) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (330) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (330) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (580) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (580) wifi:security: WPA2-PSK, phy: bgn, rssi: -50[0m
+[0;32mI (580) wifi:pm start, type: 0[0m
+
+[0;32mI (580) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (580) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (620) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1640) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1640) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1640) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1640) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1640) cam_hal: cam init ok[0m
+[0;32mI (1640) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1640) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1650) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1650) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1650) camera: Detected OV5640 camera[0m
+[0;32mI (1650) camera: Detected camera at address=0x3c[0m
+[0;32mI (1660) wifi:<ba-add>idx:0 (ifx:0, f2:69:71:2e:c3:ff), tid:0, ssn:3, winSize:64[0m
+[0;32mI (2330) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2330) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2330) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2330) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2330) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2330) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2330) cam_hal: cam config ok[0m
+[0;32mI (2340) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2340) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2360) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2360) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2360) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2360) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2360) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2370) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000/upload[0m
+[0;32mI (2370) app_main: Application initialization complete[0m
+[0;32mI (2370) main_task: Returned from app_main()[0m
+[0;32mI (3310) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (3400) HTTP_CAMERA_CLIENT: JPEG size: 13274 bytes[0m
+[0;32mI (3920) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (3920) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (8320) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (12320) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (12920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (12920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (16320) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (20320) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (21920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (21920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (24320) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (30110) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (30920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (30920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (35180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (39180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (39920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (39920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (43180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (47180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (48920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (48920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (51180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (55180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (57920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (57920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (59180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (63180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (66920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (66920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (67180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (71180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (75180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (75920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (75920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (79180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (83180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (84920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (84920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (87180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (91180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (93920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (93920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (95180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (99180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (102920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (102920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (103180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (107180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (111180) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (111920) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (111920) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;32mI (118850) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (118950) HTTP_CAMERA_CLIENT: JPEG size: 18647 bytes[0m
+[0;32mI (120690) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (120700) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (125130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (129130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (129700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (129700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (133130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (137130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (138700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (138700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (141130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (145130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (147700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (147700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (149130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (153130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (156700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (156700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (157130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (161130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (165130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (165700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (165700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (169130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (173130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (174700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (174700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (177130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (181130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (183700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (183700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (185130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (189130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (192700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (192700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (193130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (197130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (201130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (201700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (201700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (205130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (209130) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (210700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (210700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (219640) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (219700) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (219700) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (226230) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (227290) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (227390) HTTP_CAMERA_CLIENT: JPEG size: 10475 bytes[0m
+[0;33mW (232310) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (232400) esp-tls: [sock=60] select() timeout[0m
+[1;31mE (232400) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (232400) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (232400) HTTP_CAMERA_CLIENT: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (236870) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (240870) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (241400) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (241400) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (244870) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (248870) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (250400) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (250400) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (252870) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (256870) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (259400) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (259400) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (260870) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (265300) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (265400) HTTP_CAMERA_CLIENT: JPEG size: 13553 bytes[0m
+[0;32mI (267270) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (267270) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (271580) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (275580) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (276270) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (276270) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (279580) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (283580) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (285270) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (285270) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;32mI (293680) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (293780) HTTP_CAMERA_CLIENT: JPEG size: 14399 bytes[0m
+[0;32mI (294210) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (294210) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (300210) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (300770) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (300870) HTTP_CAMERA_CLIENT: JPEG size: 15015 bytes[0m
+[0;32mI (301300) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (301300) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (307560) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (310300) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (310300) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (311560) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (315560) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (319300) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (319300) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (319560) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (323560) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (325610) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (325700) HTTP_CAMERA_CLIENT: JPEG size: 14324 bytes[0m
+[0;32mI (326740) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (326740) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;32mI (333970) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (334060) HTTP_CAMERA_CLIENT: JPEG size: 14397 bytes[0m
+[0;32mI (337740) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (337740) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;32mI (343600) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (343720) HTTP_CAMERA_CLIENT: JPEG size: 14543 bytes[0m
+[0;32mI (344290) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (344290) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;32mI (350440) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (350550) HTTP_CAMERA_CLIENT: JPEG size: 16573 bytes[0m
+[0;32mI (352110) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (352110) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (356460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (360460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (361110) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (361110) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (364460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (368460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (370110) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (370110) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (372460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (376460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (379110) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (379110) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (380460) cam_hal: Failed to get frame: timeout[0m
+E BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40376901
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+[0;32mI (451) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (451) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (451) wifi:pm start, type: 0[0m
+
+[0;32mI (451) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (451) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (511) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1331) wifi:<ba-add>idx:0 (ifx:0, f2:69:71:2e:c3:ff), tid:0, ssn:3, winSize:64[0m
+[0;32mI (1611) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1611) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1611) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1611) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1611) cam_hal: cam init ok[0m
+[0;32mI (1611) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1611) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1621) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1621) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1621) camera: Detected OV5640 camera[0m
+[0;32mI (1621) camera: Detected camera at address=0x3c[0m
+[0;32mI (2301) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2301) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2301) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2301) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2301) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2301) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2301) cam_hal: cam config ok[0m
+[0;32mI (2311) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2311) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2331) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2331) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2331) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2331) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2331) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2331) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000/upload[0m
+[0;32mI (2331) app_main: Application initialization complete[0m
+[0;32mI (2331) main_task: Returned from app_main()[0m
+[0;32mI (3281) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (3371) HTTP_CAMERA_CLIENT: JPEG size: 12056 bytes[0m
+[0;32mI (3871) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (3871) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;32mI (10631) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (10731) HTTP_CAMERA_CLIENT: JPEG size: 16313 bytes[0m
+[0;32mI (13351) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (13351) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (21971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (22351) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (22351) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (25971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (29971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (31351) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (31351) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (33971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (37971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (40351) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (40351) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (41971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (45971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (49351) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (49351) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (49971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (53971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (57971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (58351) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (58351) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (61971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (65971) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (67351) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (67351) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+E BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40376901
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (292) phy_init: Saving new calibration data due to checksum faI (197) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (197) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (197) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (197) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (198) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (198) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (198) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (198) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (198) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (199) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (199) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (199) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (200) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (200) esp_psram: Speed: 80MHz[0m
+[0;32mI (200) cpu_start: Multicore app[0m
+[0;32mI (209) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (209) app_init: Application information:[0m
+[0;32mI (210) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (210) app_init: App version:      v1.1.0[0m
+[0;32mI (210) app_init: Compile time:     Feb 23 2026 16:24:08[0m
+[0;32mI (210) app_init: ELF file SHA256:  7eaa60ae7...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (211) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (211) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (211) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (211) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (212) spi_flash: detected chip: gd[0m
+[0;32mI (212) spi_flash: flash io: qio[0m
+[0;33mW (212) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (213) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (213) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (214) main_task: Started on CPU0[0m
+[0;32mI (224) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (224) main_task: Calling app_main()[0m
+[0;32mI (224) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (244) pp: pp rom version: e7ae62f[0m
+[0;32mI (244) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (254) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (254) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (254) wifi:wifi certification version: v7.0[0m
+[0;32mI (264) wifi:config NVS flash: enabled[0m
+[0;32mI (264) wifi:config nano formatting: disabled[0m
+[0;32mI (264) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (264) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (264) wifi:Init management short buffer num: 32[0m
+[0;32mI (264) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (264) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (264) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (264) wifi:Init static rx buffer num: 10[0m
+[0;32mI (264) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (264) wifi_init: rx ba win: 6[0m
+[0;32mI (264) wifi_init: accept mbox: 6[0m
+[0;32mI (264) wifi_init: tcpip mbox: 32[0m
+[0;32mI (264) wifi_init: udp mbox: 6[0m
+[0;32mI (264) wifi_init: tcp mbox: 6[0m
+[0;32mI (264) wifi_init: tcp tx win: 5760[0m
+[0;32mI (264) wifi_init: tcp rx win: 5760[0m
+[0;32mI (264) wifi_init: tcp mss: 1440[0m
+[0;32mI (264) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (264) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (264) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (264) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (264) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (264) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (304) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (314) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (314) wifi:enable tsf[0m
+[0;32mI (314) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (314) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (324) camera wifi: wifi init finished.[0m
+[0;32mI (324) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (324) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (354) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (364) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (454) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (454) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (454) wifi:pm start, type: 0[0m
+
+[0;32mI (454) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (454) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (534) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (644) wifi:<ba-add>idx:0 (ifx:0, f2:69:71:2e:c3:ff), tid:0, ssn:2, winSize:64[0m
+[0;32mI (1554) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1554) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1554) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1554) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1554) cam_hal: cam init ok[0m
+[0;32mI (1554) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1554) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1564) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1564) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1564) camera: Detected OV5640 camera[0m
+[0;32mI (1564) camera: Detected camera at address=0x3c[0m
+[0;32mI (2244) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2244) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2244) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2244) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2244) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2244) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2244) cam_hal: cam config ok[0m
+[0;32mI (2254) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2254) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2274) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2274) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2274) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2284) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2284) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2284) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000/upload[0m
+[0;32mI (2284) app_main: Application initialization complete[0m
+[0;32mI (2284) main_task: Returned from app_main()[0m
+[0;32mI (3224) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (3314) HTTP_CAMERA_CLIENT: JPEG size: 9432 bytes[0m
+[0;32mI (3724) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (3724) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;32mI (9554) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (9674) HTTP_CAMERA_CLIENT: JPEG size: 12893 bytes[0m
+[0;32mI (14114) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (14114) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (18364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (22364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (23114) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (23114) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (26364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (30364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (32114) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (32114) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (34364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (38364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (41114) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (41114) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (42364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (46364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (50114) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (50114) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (50364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (54364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (58364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (59114) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (59114) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (62364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (66364) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (68114) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (68114) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+E BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40376901
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (552) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (552) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (552) wifi:pm start, type: 0[0m
+
+[0;32mI (552) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (552) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (652) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (662) wifi:<ba-add>idx:0 (ifx:0, f2:69:71:2e:c3:ff), tid:0, ssn:2, winSize:64[0m
+[0;32mI (1632) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1632) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1632) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1632) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1632) cam_hal: cam init ok[0m
+[0;32mI (1632) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1632) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1642) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1642) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1642) camera: Detected OV5640 camera[0m
+[0;32mI (1642) camera: Detected camera at address=0x3c[0m
+[0;32mI (2322) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2322) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2322) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2322) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2322) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2322) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2322) cam_hal: cam config ok[0m
+[0;32mI (2332) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2332) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2352) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2352) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2352) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2352) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2352) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2352) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000/upload[0m
+[0;32mI (2352) app_main: Application initialization complete[0m
+[0;32mI (2352) main_task: Returned from app_main()[0m
+[0;32mI (3302) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (3402) HTTP_CAMERA_CLIENT: JPEG size: 14458 bytes[0m
+[0;32mI (4142) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (4142) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (12362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (13142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (13142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (16362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (20362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (22142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (22142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (24362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (28362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (31142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (31142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (32362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (36362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (40142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (40142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (40362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (44362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (48362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (49142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (49142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (52362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (56362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (58142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (58142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (60362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (64362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (67142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (67142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (68362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (72362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (76142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (76142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (76362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (80362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (84362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (85142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (85142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (88362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (92362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (94142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (94142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (96362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (100362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (103142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (103142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (104362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (108362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (112142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (112142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (112362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (116362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (120362) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (121142) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (121142) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (124362) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (126692) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (126812) HTTP_CAMERA_CLIENT: JPEG size: 10313 bytes[0m
+[0;32mI (129282) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (129282) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (133732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (137732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (138282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (138282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (141732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (145732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (147282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (147282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (149732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (153732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (156282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (156282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (157732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (161732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (165282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (165282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (165732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (169732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (173732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (174282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (174282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (177732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (181732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (183282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (183282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (185732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (189732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (192282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (192282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (193732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (197732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (201282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (201282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (201732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (205732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (209732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (210282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (210282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (213732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (217732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (219282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (219282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (221732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (225732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (228282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (228282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (229732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (233732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (237282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (237282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (237732) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (245982) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (246282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (246282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (250292) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (254292) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (255282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (255282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (257822) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (262202) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (264282) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (264282) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (266202) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (270202) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (270872) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (270962) HTTP_CAMERA_CLIENT: JPEG size: 10279 bytes[0m
+[0;33mW (274202) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (275972) esp-tls: [sock=61] select() timeout[0m
+[1;31mE (275972) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (275972) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (275972) HTTP_CAMERA_CLIENT: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (283482) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (284972) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (284972) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (287482) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (292152) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (292262) HTTP_CAMERA_CLIENT: JPEG size: 11486 bytes[0m
+[0;32mI (294592) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (294592) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m
+[0;33mW (299442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (303442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (303592) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (303592) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (307442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (311442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (312592) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (312592) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (315442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (319442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (321592) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (321592) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (323442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (327442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (330592) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (330592) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (331442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (335442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (339442) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (339592) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (339592) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (343442) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (291) phy_init: Saving new calibration data due to checksum faI (471) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (471) wifi:security: WPA2-PSK, phy: bgn, rssi: -57[0m
+[0;32mI (471) wifi:pm start, type: 0[0m
+
+[0;32mI (471) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (481) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (511) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (921) wifi:<ba-add>idx:0 (ifx:0, f2:69:71:2e:c3:ff), tid:0, ssn:2, winSize:64[0m
+[0;32mI (1901) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1901) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1901) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1901) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1901) cam_hal: cam init ok[0m
+[0;32mI (1901) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1901) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1911) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1911) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1911) camera: Detected OV5640 camera[0m
+[0;32mI (1911) camera: Detected camera at address=0x3c[0m
+[0;32mI (2591) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2591) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2591) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2591) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2591) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2591) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2591) cam_hal: cam config ok[0m
+[0;32mI (2601) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2601) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2621) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2621) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2621) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2621) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2621) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2621) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000/upload[0m
+[0;32mI (2621) app_main: Application initialization complete[0m
+[0;32mI (2621) main_task: Returned from app_main()[0m
+[0;32mI (3571) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes, format: 0[0m
+[0;32mI (3661) HTTP_CAMERA_CLIENT: JPEG size: 8676 bytes[0m
+[0;32mI (4221) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (4221) HTTP_CAMERA_CLIENT: HTTP POST Status = 200, content_length = 25[0m

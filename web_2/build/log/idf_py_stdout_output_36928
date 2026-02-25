@@ -1,0 +1,662 @@
+Command: C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\TCD\IoT\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_2\build\human_face_detection_web.elf C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_2\build\bootloader\bootloader.elf --force-color -m 'C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\TCD\IoT\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a5ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x584
+load:0x403c8700,len:0xbfc
+load:0x403cb700,len:0x2d30
+entry 0x403c8908
+[0;32mI (192) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (192) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (193) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (193) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (193) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (194) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (194) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (194) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (194) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (194) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (195) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (196) esp_psram: Speed: 80MHz[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     human_face_detection_web[0m
+[0;32mI (205) app_init: App version:      v1.1.0[0m
+[0;32mI (206) app_init: Compile time:     Feb 23 2026 15:57:26[0m
+[0;32mI (206) app_init: ELF file SHA256:  c9734e57c...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.2-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (206) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FCABA60 len 0003DCB0 (247 KiB): RAM[0m
+[0;32mI (207) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (207) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (207) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (208) spi_flash: detected chip: gd[0m
+[0;32mI (208) spi_flash: flash io: qio[0m
+[0;33mW (208) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (209) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (209) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (210) main_task: Started on CPU0[0m
+[0;32mI (220) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (220) main_task: Calling app_main()[0m
+[0;32mI (220) app_main: Starting Human Face Detection Web Application[0m
+[0;32mI (240) pp: pp rom version: e7ae62f[0m
+[0;32mI (240) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (250) wifi:wifi driver task: 3fceeb44, prio:23, stack:6656, core=0[0m
+[0;32mI (250) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (260) wifi:wifi certification version: v7.0[0m
+[0;32mI (260) wifi:config NVS flash: enabled[0m
+[0;32mI (260) wifi:config nano formatting: disabled[0m
+[0;32mI (260) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (260) wifi:Init management short buffer num: 32[0m
+[0;32mI (260) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (260) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (260) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (260) wifi:Init static rx buffer num: 10[0m
+[0;32mI (260) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (260) wifi_init: rx ba win: 6[0m
+[0;32mI (260) wifi_init: accept mbox: 6[0m
+[0;32mI (260) wifi_init: tcpip mbox: 32[0m
+[0;32mI (260) wifi_init: udp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp mbox: 6[0m
+[0;32mI (260) wifi_init: tcp tx win: 5760[0m
+[0;32mI (260) wifi_init: tcp rx win: 5760[0m
+[0;32mI (260) wifi_init: tcp mss: 1440[0m
+[0;32mI (260) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (260) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (260) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (260) camera wifi: wifi_init_sta finished.[0m
+[0;32mI (260) camera wifi: connect to ap SSID:Arlene password:katie0000[0m
+[0;32mI (260) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (300) wifi:mode : sta (80:b5:4e:e8:18:c0)[0m
+[0;32mI (300) wifi:enable tsf[0m
+[0;32mI (300) camera wifi: WIFI_EVENT_STA_START[0m
+[0;32mI (300) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (300) camera wifi: wifi init finished.[0m
+[0;32mI (300) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (310) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (380) wifi:connected with Arlene, aid = 3, channel 6, BW20, bssid = f2:69:71:2e:c3:ff[0m
+[0;32mI (380) wifi:security: WPA2-PSK, phy: bgn, rssi: -54[0m
+[0;32mI (380) wifi:pm start, type: 0[0m
+
+[0;32mI (380) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (380) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (510) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1420) camera wifi: got ip:172.20.10.12[0m
+
+[0;32mI (1420) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1420) who_camera: Camera module is ESP-S3-EYE[0m
+[0;32mI (1420) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1420) cam_hal: cam init ok[0m
+[0;32mI (1420) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1420) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1430) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1430) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1430) camera: Detected OV5640 camera[0m
+[0;32mI (1430) camera: Detected camera at address=0x3c[0m
+[0;32mI (2110) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2110) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2110) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2110) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2110) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2110) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2110) cam_hal: cam config ok[0m
+[0;32mI (2120) ov5640: Set PLL: bypass: 0, multiplier: 8, sys_div: 1, pre_div: 1, root_2x: 0, pclk_root_div: 1, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (2120) ov5640: Calculated XVCLK: 10000000 Hz, REFIN: 10000000 Hz, VCO: 80000000 Hz, PLL_CLK: 32000000 Hz, SYSCLK: 8000000 Hz, PCLK: 4000000 Hz[0m
+[0;32mI (2140) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (2140) camera_httpd: Starting web server on port: '80'[0m
+[0;32mI (2140) camera_httpd: Starting stream server on port: '81'[0m
+[0;32mI (2140) HTTP_CAMERA_CLIENT: Starting HTTP Camera Client[0m
+[0;32mI (2140) HTTP_CAMERA_CLIENT: Starting HTTP camera client task[0m
+[0;32mI (2140) HTTP_CAMERA_CLIENT: Target URL: http://172.20.10.11:5000[0m
+[0;32mI (2140) app_main: Application initialization complete[0m
+[0;32mI (2140) main_task: Returned from app_main()[0m
+[0;32mI (3090) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (3100) wifi:<ba-add>idx:0 (ifx:0, f2:69:71:2e:c3:ff), tid:0, ssn:3, winSize:64[0m
+[0;32mI (3530) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (3530) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;33mW (7850) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (11850) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (12530) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (12530) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;32mI (18540) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (19030) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (19030) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;33mW (23300) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (27300) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (28030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (28030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (36230) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (37030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (37030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (40230) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (44230) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (46030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (46030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (48230) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (55030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (55030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (55230) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (62070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (64030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (64030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (66070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (70070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (73030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (73030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (74070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (78070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (82030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (82030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (82070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (86070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (90070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (91030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (91030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (94070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (98070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (100030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (100030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (102070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (106070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (109030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (109030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (110070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (114070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (118030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (118030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (118070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (122070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (126070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (127030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (127030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (130070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (134070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (136030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (136030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (138070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (142070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (145030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (145030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (146070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (150070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (154030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (154030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (154070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (158070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (162070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (163030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (163030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (166070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (170070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (172030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (172030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (174070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (178070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (181030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (181030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (182070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (186070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (190030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (190030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (190070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (194070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (198070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (199030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (199030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (202070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (206070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (208030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (208030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (210070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (214070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (217030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (217030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (218070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (222070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (226030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (226030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (226070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (230070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (234070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (235030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (235030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (238070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (242070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (244030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (244030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (246070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (250070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (253030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (253030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (254070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (258070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (262030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (262030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (262070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (266070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (270070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (271030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (271030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (274070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (278070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (280030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (280030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (282070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (286070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (289030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (289030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (290070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (294070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (298030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (298030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (298070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (302070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (306070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (307030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (307030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (310070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (314070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (316030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (316030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (318070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (322070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (325030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (325030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (326070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (330070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (334030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (334030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (334070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (338070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (342070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (343030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (343030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (346070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (350070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (352030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (352030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (354070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (358070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (361030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (361030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (362070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (366070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (370030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (370030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (370070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (374070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (378070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (379030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (379030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (382070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (386070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (388030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (388030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (390070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (394070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (397030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (397030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (398070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (402070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (406030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (406030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (406070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (410070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (414070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (415030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (415030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (418070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (422070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (424030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (424030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (426070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (430070) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (433030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (433030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (434070) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (439410) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (441090) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (441090) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;33mW (445430) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (446760) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (447350) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (447350) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;33mW (451770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (455770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (456350) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (456350) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (459770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (463770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (465350) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (465350) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (467770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (471770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (474350) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (474350) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (475770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (479770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (483350) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (483350) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (483770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (487770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (491770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (492350) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (492350) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (495770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (499770) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (501350) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (501350) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (503770) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (506810) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (506900) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (506900) HTTP_CAMERA_CLIENT: HTTP POST request failed: ESP_FAIL[0m
+[0;32mI (506900) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (512380) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (513310) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (513310) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;32mI (518720) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (519220) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (519220) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;32mI (524540) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (525150) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (525160) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;32mI (530620) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (531560) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (531560) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;32mI (536960) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (537010) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (537010) HTTP_CAMERA_CLIENT: HTTP POST request failed: ESP_FAIL[0m
+[0;32mI (537010) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (542280) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (542740) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (542740) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;32mI (548360) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (550200) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (550200) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;32mI (555460) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (555560) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (555560) HTTP_CAMERA_CLIENT: HTTP POST request failed: ESP_FAIL[0m
+[0;32mI (555560) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (561030) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (561200) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (561200) HTTP_CAMERA_CLIENT: HTTP POST request failed: ESP_FAIL[0m
+[0;32mI (561200) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (566600) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (567360) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (567360) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;33mW (568190) httpd_uri: httpd_uri: URI '/stream' not found[0m
+[0;33mW (568190) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (572690) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (573240) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (573240) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;32mI (578510) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[1;31mE (578570) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (578570) HTTP_CAMERA_CLIENT: HTTP POST request failed: ESP_FAIL[0m
+[0;32mI (578570) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (583830) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (584210) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (584210) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;32mI (589660) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (590070) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (590070) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;33mW (592800) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (592800) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (597210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (599070) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (599070) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (601210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (605210) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (607800) camera mdns: JSON: 267B[0m
+[0;33mW (608070) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (608070) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (609210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (613210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (617070) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (617070) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (617210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (621210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (625210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (626070) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (626070) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (629210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (633210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (635070) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (635070) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (637210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (641210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (644070) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (644070) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (645210) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (649210) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (652250) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (652590) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (652590) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;33mW (660050) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (661590) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (661590) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (664050) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (667700) HTTP_CAMERA_CLIENT: Captured frame: 153600 bytes[0m
+[0;32mI (668020) HTTP_CAMERA_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (668030) HTTP_CAMERA_CLIENT: HTTP POST Status = 405, content_length = 153[0m
+[0;33mW (672460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (676460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (677030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (677030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (680460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (684460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (686030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (686030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (688460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (692460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (695030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (695030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (696460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (700460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (704030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (704030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (704460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (705310) httpd_uri: httpd_uri: URI '/win_uri' not found[0m
+[0;33mW (705310) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (708460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (712460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (713030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (713030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (716460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (720460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (722030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (722030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (724460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (728460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (731030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (731030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (732460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (736300) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (736300) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (736310) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (736460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (738440) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (738450) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (738450) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (740030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (740030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (740460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (744460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (748460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (749030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (749030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (752460) cam_hal: Failed to get frame: timeout[0m
+[0;32mI (755660) camera mdns: JSON: 267B[0m
+[0;33mW (756460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (758030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (758030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (760460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (764460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (767030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (767030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (768460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (772460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (776030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (776030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (776460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (780460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (784460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (785030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (785030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (788460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (792460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (794030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (794030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (796460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (800460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (803030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (803030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (804460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (808460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (812030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (812030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (812460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (816460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (820460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (821030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (821030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (824460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (828460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (830030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (830030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (832460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (836460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (839030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (839030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (840460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (844460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (848030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (848030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (848460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (852460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (856460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (857030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (857030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (860460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (864460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (866030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (866030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (868460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (872460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (875030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (875030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (876460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (880460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (884030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (884030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (884460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (888460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (892460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (893030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (893030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (896460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (900460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (902030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (902030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (904460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (908460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (911030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (911030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (912460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (916460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (920030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (920030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (920460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (924460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (928460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (929030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (929030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (932460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (936460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (938030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (938030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (940460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (944460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (947030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (947030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (948460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (952460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (956030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (956030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (956460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (960460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (964460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (965030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (965030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (968460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (972460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (974030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (974030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (976460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (980460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (983030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (983030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (984460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (988460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (992030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (992030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (992460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (996460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1000460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1001030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1001030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1004460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1008460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1010030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1010030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1012460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1016460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1019030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1019030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1020460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1024460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1028030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1028030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1028460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1032460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1036460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1037030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1037030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1040460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1044460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1046030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1046030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1048460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1052460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1055030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1055030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1056460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1060460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1064030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1064030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1064460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1068460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1072460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1073030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1073030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1076460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1080460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1082030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1082030) HTTP_CAMERA_CLIENT: Camera capture failed[0m
+[0;33mW (1084460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1088460) cam_hal: Failed to get frame: timeout[0m
+[0;33mW (1091030) cam_hal: Failed to get frame: timeout[0m
+[1;31mE (1091030) HTTP_CAMERA_CLIENT: Camera capture failed[0m

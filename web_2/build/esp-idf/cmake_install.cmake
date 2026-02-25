@@ -564,16 +564,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/main/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/esp-code-scanner/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/esp-dl/cmake_install.cmake")
 endif()
 
@@ -620,5 +610,15 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/modules/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/main/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/esp-code-scanner/cmake_install.cmake")
 endif()
 

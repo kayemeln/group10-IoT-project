@@ -163,7 +163,6 @@ $<TARGET_FILE:idf::touch_element>
 $<TARGET_FILE:idf::usb>
 $<TARGET_FILE:idf::wifi_provisioning>
 $<TARGET_FILE:__idf_json>
-$<TARGET_FILE:idf::main>
 $<TARGET_FILE:idf::esp-dl>
 $<TARGET_FILE:idf::espressif__esp_jpeg>
 $<TARGET_FILE:idf::espressif__esp32-camera>
@@ -183,3 +182,5 @@ $<TARGET_FILE:idf::modules>
 $<TARGET_FILE:__idf_esp-dl>
 $<TARGET_FILE:__idf_fb_gfx>
 $<TARGET_FILE:__idf_espressif__esp32_s3_eye_noglib>
+$<TARGET_FILE:idf::main>
+$<TARGET_FILE:__idf_modules>

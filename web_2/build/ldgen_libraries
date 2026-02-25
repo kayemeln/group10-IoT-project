@@ -163,7 +163,6 @@ C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-
 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/usb/libusb.a
 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/json/libjson.a
-C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/main/libmain.a
 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/esp-dl/libesp-dl.a
 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a
@@ -183,3 +182,5 @@ C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-
 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/esp-dl/libesp-dl.a
 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/fb_gfx/libfb_gfx.a
 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/espressif__esp32_s3_eye_noglib/libespressif__esp32_s3_eye_noglib.a
+C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/main/libmain.a
+C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_2/build/esp-idf/modules/libmodules.a
