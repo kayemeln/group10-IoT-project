@@ -44,7 +44,7 @@ def put():
     return f"Forwarded with status {response.status_code}", response.status_code
 
 if __name__ == "__main__":
-    app.run(host="172.20.10.2", port=5000, debug=True)
+    app.run(host="172.20.10.11", port=5000, debug=True)
 
 @app.route("/message", methods=["POST"])
 def message():
