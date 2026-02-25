@@ -64,7 +64,6 @@ subscribe_future = client.subscribe(
 suback = subscribe_future.result(TIMEOUT)
 print(f"Subscribed! Reason codes: {suback.reason_codes}")
 
-print("Waiting for messages... Press Ctrl+C to exit.\n")
 
 try:
     while True:
