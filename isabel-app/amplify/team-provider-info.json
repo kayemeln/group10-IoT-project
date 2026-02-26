@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-isabelapp-dev-a01d8-authRole",
+      "UnauthRoleArn": "arn:aws:iam::855299048284:role/amplify-isabelapp-dev-a01d8-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::855299048284:role/amplify-isabelapp-dev-a01d8-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-isabelapp-dev-a01d8-deployment",
+      "UnauthRoleName": "amplify-isabelapp-dev-a01d8-unauthRole",
+      "StackName": "amplify-isabelapp-dev-a01d8",
+      "StackId": "arn:aws:cloudformation:eu-west-1:855299048284:stack/amplify-isabelapp-dev-a01d8/1563bb80-1313-11f1-b432-0a90dc0db8d5",
+      "AmplifyAppId": "d3hvtwth1w30e2"
+    }
+  }
+}
