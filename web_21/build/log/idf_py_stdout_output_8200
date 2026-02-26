@@ -1,0 +1,70 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe -DESP_PLATFORM=1 -DIDF_TARGET=esp32s3 -DCCACHE_ENABLE=1 C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_21
+-- Existing sdkconfig 'C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/sdkconfig' renamed to 'C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/sdkconfig.old'.
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.43.0.windows.1")
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/liam0/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/liam0/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/liam0/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Direct dependencies have changed, solving dependencies.
+................NOTICE: Updating lock file at C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_21\dependencies.lock
+NOTICE: Processing 8 dependencies:
+NOTICE: [1/8] espressif/button (3.5.0)
+NOTICE: [2/8] espressif/cmake_utilities (0.5.3)
+NOTICE: [3/8] espressif/esp32-camera (2.1.5)
+NOTICE: [4/8] espressif/esp32_s3_eye_noglib (3.0.4)
+NOTICE: [5/8] espressif/esp_codec_dev (1.5.4)
+NOTICE: [6/8] espressif/esp_jpeg (1.3.1)
+NOTICE: [7/8] espressif/mdns (1.10.0)
+NOTICE: [8/8] idf (5.5.2)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+-- Project sdkconfig file C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/sdkconfig
+Loading defaults file C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/sdkconfig.defaults...
+C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/sdkconfig.defaults:10 CONFIG_ESP_TASK_WDT was replaced with CONFIG_ESP_TASK_WDT_INIT 
+Loading defaults file C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/sdkconfig.defaults.esp32s3...
+C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/sdkconfig.defaults.esp32s3:1 CONFIG_ESP32S3_DEFAULT_CPU_FREQ_240 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240 
+C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/sdkconfig.defaults.esp32s3:2 CONFIG_ESP32S3_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM 
+-- Compiler supported targets: xtensa-esp-elf
+-- Found Python3: C:/Users/liam0/.espressif/python_env/idf5.5_py3.12_env/Scripts/python.exe (found version "3.12.1") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- App "human_face_detection_web" version: v1.1.0
+-- Adding linker script C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_master.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_50.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_smp.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_dtm.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_test.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_scan.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.libc.ld
+-- Adding linker script C:/TCD/IoT/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script C:/TCD/IoT/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- BUTTON: 3.5.0
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-code-scanner esp-dl esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__button espressif__cmake_utilities espressif__esp32-camera espressif__esp32_s3_eye_noglib espressif__esp_codec_dev espressif__esp_jpeg espressif__mdns esptool_py fatfs fb_gfx freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls modules mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/TCD/IoT/components/app_trace C:/TCD/IoT/components/app_update C:/TCD/IoT/components/bootloader C:/TCD/IoT/components/bootloader_support C:/TCD/IoT/components/bt C:/TCD/IoT/components/cmock C:/TCD/IoT/components/console C:/TCD/IoT/components/cxx C:/TCD/IoT/components/driver C:/TCD/IoT/components/efuse C:/Users/liam0/esp/esp-who-v1.1.0/components/esp-code-scanner C:/Users/liam0/esp/esp-who-v1.1.0/components/esp-dl C:/TCD/IoT/components/esp-tls C:/TCD/IoT/components/esp_adc C:/TCD/IoT/components/esp_app_format C:/TCD/IoT/components/esp_bootloader_format C:/TCD/IoT/components/esp_coex C:/TCD/IoT/components/esp_common C:/TCD/IoT/components/esp_driver_ana_cmpr C:/TCD/IoT/components/esp_driver_bitscrambler C:/TCD/IoT/components/esp_driver_cam C:/TCD/IoT/components/esp_driver_dac C:/TCD/IoT/components/esp_driver_gpio C:/TCD/IoT/components/esp_driver_gptimer C:/TCD/IoT/components/esp_driver_i2c C:/TCD/IoT/components/esp_driver_i2s C:/TCD/IoT/components/esp_driver_isp C:/TCD/IoT/components/esp_driver_jpeg C:/TCD/IoT/components/esp_driver_ledc C:/TCD/IoT/components/esp_driver_mcpwm C:/TCD/IoT/components/esp_driver_parlio C:/TCD/IoT/components/esp_driver_pcnt C:/TCD/IoT/components/esp_driver_ppa C:/TCD/IoT/components/esp_driver_rmt C:/TCD/IoT/components/esp_driver_sdio C:/TCD/IoT/components/esp_driver_sdm C:/TCD/IoT/components/esp_driver_sdmmc C:/TCD/IoT/components/esp_driver_sdspi C:/TCD/IoT/components/esp_driver_spi C:/TCD/IoT/components/esp_driver_touch_sens C:/TCD/IoT/components/esp_driver_tsens C:/TCD/IoT/components/esp_driver_twai C:/TCD/IoT/components/esp_driver_uart C:/TCD/IoT/components/esp_driver_usb_serial_jtag C:/TCD/IoT/components/esp_eth C:/TCD/IoT/components/esp_event C:/TCD/IoT/components/esp_gdbstub C:/TCD/IoT/components/esp_hid C:/TCD/IoT/components/esp_http_client C:/TCD/IoT/components/esp_http_server C:/TCD/IoT/components/esp_https_ota C:/TCD/IoT/components/esp_https_server C:/TCD/IoT/components/esp_hw_support C:/TCD/IoT/components/esp_lcd C:/TCD/IoT/components/esp_local_ctrl C:/TCD/IoT/components/esp_mm C:/TCD/IoT/components/esp_netif C:/TCD/IoT/components/esp_netif_stack C:/TCD/IoT/components/esp_partition C:/TCD/IoT/components/esp_phy C:/TCD/IoT/components/esp_pm C:/TCD/IoT/components/esp_psram C:/TCD/IoT/components/esp_ringbuf C:/TCD/IoT/components/esp_rom C:/TCD/IoT/components/esp_security C:/TCD/IoT/components/esp_system C:/TCD/IoT/components/esp_timer C:/TCD/IoT/components/esp_vfs_console C:/TCD/IoT/components/esp_wifi C:/TCD/IoT/components/espcoredump C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/managed_components/espressif__button C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/managed_components/espressif__cmake_utilities C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/managed_components/espressif__esp32-camera C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/managed_components/espressif__esp32_s3_eye_noglib C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/managed_components/espressif__esp_codec_dev C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/managed_components/espressif__esp_jpeg C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/managed_components/espressif__mdns C:/TCD/IoT/components/esptool_py C:/TCD/IoT/components/fatfs C:/Users/liam0/esp/esp-who-v1.1.0/components/fb_gfx C:/TCD/IoT/components/freertos C:/TCD/IoT/components/hal C:/TCD/IoT/components/heap C:/TCD/IoT/components/http_parser C:/TCD/IoT/components/idf_test C:/TCD/IoT/components/ieee802154 C:/TCD/IoT/components/json C:/TCD/IoT/components/log C:/TCD/IoT/components/lwip C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/main C:/TCD/IoT/components/mbedtls C:/Users/liam0/esp/esp-who-v1.1.0/components/modules C:/TCD/IoT/components/mqtt C:/TCD/IoT/components/newlib C:/TCD/IoT/components/nvs_flash C:/TCD/IoT/components/nvs_sec_provider C:/TCD/IoT/components/openthread C:/TCD/IoT/components/partition_table C:/TCD/IoT/components/perfmon C:/TCD/IoT/components/protobuf-c C:/TCD/IoT/components/protocomm C:/TCD/IoT/components/pthread C:/TCD/IoT/components/rt C:/TCD/IoT/components/sdmmc C:/TCD/IoT/components/soc C:/TCD/IoT/components/spi_flash C:/TCD/IoT/components/spiffs C:/TCD/IoT/components/tcp_transport C:/TCD/IoT/components/touch_element C:/TCD/IoT/components/ulp C:/TCD/IoT/components/unity C:/TCD/IoT/components/usb C:/TCD/IoT/components/vfs C:/TCD/IoT/components/wear_levelling C:/TCD/IoT/components/wifi_provisioning C:/TCD/IoT/components/wpa_supplicant C:/TCD/IoT/components/xtensa
+-- Configuring done (15.7s)
+-- Generating done (1.7s)
+-- Build files have been written to: C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/build
