@@ -3,6 +3,7 @@ from awscrt import mqtt5
 import threading
 import time
 import paho.mqtt.client as paho
+import json
 
 ENDPOINT = "a3go3aob15w1as-ats.iot.eu-west-1.amazonaws.com"
 CERT_PATH = "ciaran-keys/e882d03186b8dd480a5d7a14ba7323da7f5e9f3be69a6582e516cd8d7b83e022-certificate.pem.crt"
@@ -14,7 +15,7 @@ TIMEOUT = 30
 # Mosquitto 
 MOSQ_HOST = "172.20.10.11"   # <-- change to your Mosquitto IP
 MOSQ_PORT = 1883
-MOSQ_TOPIC = "local/response"
+MOSQ_TOPIC = "access/control"
 
 connection_success_event = threading.Event()
 stopped_event = threading.Event()
@@ -30,7 +31,9 @@ def on_publish_received(publish_packet_data):
     print(f"\nReceived on '{publish_packet.topic}': {payload}")
 
     # Publish to Mosquitto
-    response_message = f"AWS said: {payload}"
+    response_message = payload
+    data = json.loads(payload)
+    response_message = data['event']
     mosq_client.publish(MOSQ_TOPIC, response_message)
     print(f"Published to Mosquitto '{MOSQ_TOPIC}': {response_message}")
 
