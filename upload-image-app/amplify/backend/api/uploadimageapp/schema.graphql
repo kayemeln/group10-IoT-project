@@ -1,0 +1,25 @@
+type Party
+  @model
+  @auth(rules: [
+    { allow: public, operations: [create, read, update, delete] }
+  ]) {
+  id: ID!
+  partyName: String!
+  hostEmail: AWSEmail!
+  inviteToken: String!
+  password: String!
+  uploads: [GuestUpload] @hasMany(indexName: "byParty", fields: ["id"])
+}
+
+type GuestUpload
+  @model
+  @auth(rules: [
+    { allow: public, operations: [create, read, update, delete] }
+  ]) {
+  id: ID!
+  partyId: ID! @index(name: "byParty", queryField: "guestUploadsByParty", sortKeyFields: ["uploadedAt"])
+  guestName: String!
+  photoPaths: [String!]!
+  uploadedAt: AWSDateTime!
+}
+

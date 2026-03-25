@@ -1,4 +1,37 @@
 {
+  "api": {
+    "uploadimageapp": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "uploadimageappe4aa059a"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authuploadimageappe4aa059a"
+              }
+            }
+          ],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
     "uploadimageappe4aa059a": {
       "customAuth": false,
@@ -25,9 +58,44 @@
       "service": "Cognito"
     }
   },
+  "function": {
+    "S3Trigger69e80981": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_S3Trigger69e80981_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger69e80981"
+        }
+      ]
+    },
+    "AMPLIFY_function_S3Trigger69e80981_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger69e80981"
+        }
+      ]
+    }
+  },
   "storage": {
     "images": {
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ],
+          "category": "function",
+          "resourceName": "S3Trigger69e80981"
+        }
+      ],
       "providerPlugin": "awscloudformation",
       "service": "S3"
     }

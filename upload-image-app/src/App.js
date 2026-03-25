@@ -1,49 +1,23 @@
-import "./App.css";
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { FileUploader } from "@aws-amplify/ui-react-storage";
-import "@aws-amplify/ui-react/styles.css";
+import Layout from "./components/layout";
+import HomePage from "./pages/HomePage";
+import CreateParty from "./pages/CreateParty";
+import HostDashboard from "./pages/HostDashboard";
+import GuestUpload from "./pages/GuestUpload";
 
-function App() {
-  const [lastUploadedKey, setLastUploadedKey] = useState("");
-  const [error, setError] = useState("");
-
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header" style={{ padding: 24 }}>
-        <h2 style={{ marginBottom: 12 }}>Upload an image</h2>
-
-        <FileUploader
-          acceptedFileTypes={["image/*"]}
-          path="public/"
-          maxFileCount={1}
-          isResumable
-          onUploadStart={() => {
-            setError("");
-            setLastUploadedKey("");
-          }}
-          onUploadSuccess={({ key }) => {
-            setLastUploadedKey(key);
-          }}
-          onUploadError={(err) => {
-            setError(typeof err === "string" ? err : "Upload failed");
-          }}
-        />
-
-        {lastUploadedKey ? (
-          <p style={{ marginTop: 16 }}>
-            Uploaded to S3 key: <code>{lastUploadedKey}</code>
-          </p>
-        ) : null}
-
-        {error ? (
-          <p style={{ marginTop: 16, color: "salmon" }}>
-            {error}
-          </p>
-        ) : null}
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/create-party" element={<CreateParty />} />
+          <Route path="/host-dashboard/:partyId" element={<HostDashboard />} />
+          <Route path="/guest" element={<GuestUpload />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
