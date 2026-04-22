@@ -33,7 +33,8 @@ def on_publish_received(publish_packet_data):
     # Publish to Mosquitto
     response_message = payload
     data = json.loads(payload)
-    response_message = data['event']
+    #response_message = data['event']
+    response_message = f"{data['event']},{data['mouth_open']},{data['age_low']}"
     mosq_client.publish(MOSQ_TOPIC, response_message)
     print(f"Published to Mosquitto '{MOSQ_TOPIC}': {response_message}")
 
