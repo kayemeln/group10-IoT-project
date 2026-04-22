@@ -1,0 +1,22 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_21\build\bootloader\esp-idf\esptool_py && C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:/TCD/IoT/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/build/bootloader/bootloader.bin"
+Bootloader binary size 0x3f10 bytes. 0x40f0 bytes (51%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj
+C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/main/app_main.cpp: In function 'esp_err_t init_lcd_display()':
+C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/main/app_main.cpp:287:5: warning: missing initializer for member 'esp_timer_create_args_t::skip_unhandled_events' [-Wmissing-field-initializers]
+  287 |     };
+      |     ^
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable human_face_detection_web.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.12.dev1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/build/human_face_detection_web.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\liam0\esp\esp-who-v1.1.0\examples\human_face_detection\web_21\build\esp-idf\esptool_py && C:\Users\liam0\.espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:/TCD/IoT/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/build/partition_table/partition-table.bin C:/Users/liam0/esp/esp-who-v1.1.0/examples/human_face_detection/web_21/build/human_face_detection_web.bin"
+human_face_detection_web.bin binary size 0x1243e0 bytes. Smallest app partition is 0x3c0000 bytes. 0x29bc20 bytes (70%) free.

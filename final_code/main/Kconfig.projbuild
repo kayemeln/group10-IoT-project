@@ -1,0 +1,21 @@
+menu "HTTPS Client Configuration"
+    config HTTP_SERVER_ENDPOINT
+        string "Target HTTPS Server Endpoint"
+        default "172.20.10.4:443"
+        help
+            Target HTTPS endpoint for sending camera images.
+            Use port 443 for standard HTTPS.
+    
+    config HTTP_SERVER_PATH
+        string "HTTPS Server Upload Path"
+        default "/upload"
+        help
+            Path on the server where images will be uploaded.
+            
+    config HTTP_CLIENT_UPLOAD_INTERVAL
+        int "Upload Interval (seconds)"
+        default 5
+        range 1 3600
+        help
+            Interval between image uploads in seconds.
+endmenu
